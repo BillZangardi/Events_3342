@@ -12,9 +12,11 @@ namespace EventTermProjectWS
         private string agencyName;
         private string agencyPhone;
         private string agencyEmail;
+        private string agencyCity;
+        private string agencyState;
 
 
-        //getters to allow properties to be public and used elsewhere -- in PizzaMethods
+        //getters to allow properties to be public and used elsewhere
         public string name
         {
             get { return agencyName; }
@@ -39,6 +41,16 @@ namespace EventTermProjectWS
             set { agencyID = value; }
         }
 
+        public string city
+        {
+            get { return agencyCity; }
+            set { agencyCity = value; }
+        }
+        public string state
+        {
+            get { return agencyState; }
+            set { agencyState = value; }
+        }
 
 
     }

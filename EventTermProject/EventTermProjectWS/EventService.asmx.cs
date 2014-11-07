@@ -23,7 +23,7 @@ namespace EventTermProjectWS
         [WebMethod]
         public DataSet GetEvents(Agency agency, string city, string state)
         {
-            String sql = "SELECT * FROM Events where agencyID = '" + agency + "' AND eventCity ='" + city + "' AND eventState = '" + state + "'";
+            String sql = "SELECT * FROM Events where agencyID = " + agency.ID + " AND eventCity ='" + city + "' AND eventState = '" + state + "'";
 
             DataSet myDS = objDB.GetDataSet(sql);
             return myDS;

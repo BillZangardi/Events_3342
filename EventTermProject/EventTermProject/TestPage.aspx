@@ -71,10 +71,11 @@
         <asp:TextBox ID="txtCity" runat="server"></asp:TextBox>
         <br />
         <br />
-        <asp:Button ID="btnTestGetEvents" runat="server" Text="Test GetEvents" />
+        <asp:Button ID="btnTestGetEvents" runat="server" Text="Test GetEvents" OnClick="btnTestGetEvents_Click" />
         <br />
         <br />
-        <asp:Label ID="lblResults2" runat="server"></asp:Label>
+        <asp:GridView ID="gvEvents" runat="server">
+        </asp:GridView>
     </form>
 </body>
 </html>

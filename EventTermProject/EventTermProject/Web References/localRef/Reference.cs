@@ -80,26 +80,26 @@ namespace EventTermProject.localRef {
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetEvents", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public System.Data.DataSet GetEvents(object AgencyID, string city, string state) {
+        public System.Data.DataSet GetEvents(Agency agency, string city, string state) {
             object[] results = this.Invoke("GetEvents", new object[] {
-                        AgencyID,
+                        agency,
                         city,
                         state});
             return ((System.Data.DataSet)(results[0]));
         }
         
         /// <remarks/>
-        public void GetEventsAsync(object AgencyID, string city, string state) {
-            this.GetEventsAsync(AgencyID, city, state, null);
+        public void GetEventsAsync(Agency agency, string city, string state) {
+            this.GetEventsAsync(agency, city, state, null);
         }
         
         /// <remarks/>
-        public void GetEventsAsync(object AgencyID, string city, string state, object userState) {
+        public void GetEventsAsync(Agency agency, string city, string state, object userState) {
             if ((this.GetEventsOperationCompleted == null)) {
                 this.GetEventsOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetEventsOperationCompleted);
             }
             this.InvokeAsync("GetEvents", new object[] {
-                        AgencyID,
+                        agency,
                         city,
                         state}, this.GetEventsOperationCompleted, userState);
         }
@@ -160,6 +160,87 @@ namespace EventTermProject.localRef {
                 return true;
             }
             return false;
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34230")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class Agency {
+        
+        private string nameField;
+        
+        private string phoneField;
+        
+        private string emailField;
+        
+        private int idField;
+        
+        private string cityField;
+        
+        private string stateField;
+        
+        /// <remarks/>
+        public string name {
+            get {
+                return this.nameField;
+            }
+            set {
+                this.nameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string phone {
+            get {
+                return this.phoneField;
+            }
+            set {
+                this.phoneField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string email {
+            get {
+                return this.emailField;
+            }
+            set {
+                this.emailField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int ID {
+            get {
+                return this.idField;
+            }
+            set {
+                this.idField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string city {
+            get {
+                return this.cityField;
+            }
+            set {
+                this.cityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string state {
+            get {
+                return this.stateField;
+            }
+            set {
+                this.stateField = value;
+            }
         }
     }
     

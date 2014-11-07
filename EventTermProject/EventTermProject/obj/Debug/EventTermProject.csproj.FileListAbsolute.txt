@@ -1,0 +1,5 @@
+C:\Users\Nicole\Documents\GitHub\Events_3342\EventTermProject\EventTermProject\bin\EventTermProject.dll
+C:\Users\Nicole\Documents\GitHub\Events_3342\EventTermProject\EventTermProject\bin\EventTermProject.pdb
+C:\Users\Nicole\Documents\GitHub\Events_3342\EventTermProject\EventTermProject\obj\Debug\EventTermProject.csprojResolveAssemblyReference.cache
+C:\Users\Nicole\Documents\GitHub\Events_3342\EventTermProject\EventTermProject\obj\Debug\EventTermProject.dll
+C:\Users\Nicole\Documents\GitHub\Events_3342\EventTermProject\EventTermProject\obj\Debug\EventTermProject.pdb
