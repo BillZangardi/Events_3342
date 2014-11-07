@@ -24,6 +24,31 @@ p.MsoListParagraph
     
         <p class="MsoListParagraph" style="margin-left:.25in;mso-add-space:auto">
             This page describes the web service usage, its methods, and descriptions of its classes are needed by users of the web application. This page must describe the fields returned in a DataSet, so the data in the DataSet can be used in a web application. Also, you need to describe the classes and properties of each class that are used as either input to a function or returned by a function. It must be name either ServiceDescription.html or ServiceDescription.aspx.<o:p></o:p></p>
+        <p class="MsoListParagraph" style="margin-left:.25in;mso-add-space:auto">
+            <o:p></o:p>
+        </p>
+        <p class="MsoListParagraph" style="margin-left:.25in;mso-add-space:auto">
+            <o:p></o:p>
+        </p>
+        <p class="MsoListParagraph" style="margin-left:.25in;mso-add-space:auto">
+            <o:p></o:p>
+        </p>
+        <p class="MsoListParagraph" style="margin-left:.25in;mso-add-space:auto">
+            <o:p></o:p>
+        </p>
+        <p class="MsoListParagraph" style="margin-left:.25in;mso-add-space:auto">
+            <o:p>Notes:</o:p></p>
+        <p class="MsoListParagraph" style="margin-left:.25in;mso-add-space:auto">
+            <o:p>Database tables under tud24174</o:p></p>
+        <p class="MsoListParagraph" style="margin-left:.25in;mso-add-space:auto">
+            <o:p>Events</o:p></p>
+        <p class="MsoListParagraph" style="margin-left:.25in;mso-add-space:auto">
+            <o:p>Agencies</o:p></p>
+        <p class="MsoListParagraph" style="margin-left:.25in;mso-add-space:auto">
+            <o:p>Customers1</o:p></p>
+        <p class="MsoListParagraph" style="margin-left:.25in;mso-add-space:auto">
+            <o:p></o:p>
+        </p>
     
     </div>
     </form>

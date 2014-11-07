@@ -5,7 +5,8 @@ using System.Web;
 using System.Web.Services;
 using System.Data;
 
-namespace EventTermProject
+
+namespace EventTermProjectWS
 {
     /// <summary>
     /// Summary description for EventService
@@ -17,12 +18,16 @@ namespace EventTermProject
     // [System.Web.Script.Services.ScriptService]
     public class EventService : System.Web.Services.WebService
     {
-
+        DBConnect objDB = new DBConnect();
+        
         [WebMethod]
-        public DataSet GetEvents(Object agency, string city, string state)
+        public DataSet GetEvents(Agency agency, string city, string state)
         {
-            DataSet myDS = null;
+            String sql = "SELECT * FROM Events where agencyID = '" + agency + "' AND eventCity ='" + city + "' AND eventState = '" + state + "'";
+
+            DataSet myDS = objDB.GetDataSet(sql);
             return myDS;
+
         }
 
         [WebMethod]
