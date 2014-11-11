@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Services;
 using System.Data;
+using System.Data.SqlClient;
 
 
 namespace EventTermProjectWS
@@ -23,9 +24,16 @@ namespace EventTermProjectWS
         [WebMethod]
         public DataSet GetEvents(Agency agency, string city, string state)
         {
-            String sql = "SELECT * FROM Events where agencyID = " + agency.ID + " AND eventCity ='" + city + "' AND eventState = '" + state + "'";
+            SqlCommand objCommand = new SqlCommand();
+            objCommand.CommandType = CommandType.StoredProcedure;
+            objCommand.CommandText = "GetEvents";
 
-            DataSet myDS = objDB.GetDataSet(sql);
+            objCommand.Parameters.AddWithValue("@state", state);
+            objCommand.Parameters.AddWithValue("@city", city);
+            objCommand.Parameters.AddWithValue("@agencyID", agency.ID);
+
+            DBConnect objDB = new DBConnect();
+            DataSet myDS = objDB.GetDataSetUsingCmdObj(objCommand);
             return myDS;
 
         }
