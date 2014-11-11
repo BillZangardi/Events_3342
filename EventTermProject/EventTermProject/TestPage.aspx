@@ -72,6 +72,8 @@
         <br />
         <br />
         <asp:Button ID="btnTestGetEvents" runat="server" Text="Test GetEvents" OnClick="btnTestGetEvents_Click" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="btnFindEvents" runat="server" OnClick="btnFindEvents_Click" Text="Test Find Events" />
         <br />
         <br />
         <asp:GridView ID="gvEvents" runat="server">

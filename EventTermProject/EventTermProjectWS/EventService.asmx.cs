@@ -39,9 +39,22 @@ namespace EventTermProjectWS
         }
 
         [WebMethod]
-        public DataSet FindEvents(Object activities, string city, string state)
+        public DataSet FindEvents(Activity activity, string city, string state)
         {
-            DataSet myDS = null;
+            SqlCommand objCommand = new SqlCommand();
+            objCommand.CommandType = CommandType.StoredProcedure;
+            objCommand.CommandText = "FindEvents";
+
+          
+            objCommand.Parameters.AddWithValue("@state", state);
+            objCommand.Parameters.AddWithValue("@city", city);
+            objCommand.Parameters.AddWithValue("@activityType", activity.type);
+            objCommand.Parameters.AddWithValue("@activityDay", activity.day);
+            objCommand.Parameters.AddWithValue("@activityTime", activity.time);
+
+
+            DBConnect objDB = new DBConnect();
+            DataSet myDS = objDB.GetDataSetUsingCmdObj(objCommand);
             return myDS;
         }
     }

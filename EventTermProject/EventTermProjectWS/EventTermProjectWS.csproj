@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="Agency.cs" />
     <Compile Include="Connection.cs" />
+    <Compile Include="Activity.cs" />
     <Compile Include="EventService.asmx.cs">
       <DependentUpon>EventService.asmx</DependentUpon>
       <SubType>Component</SubType>

@@ -21,7 +21,7 @@ namespace EventTermProject
         {
             localRef.Agency agency = new localRef.Agency();
 
-            agency.ID = 1;
+            agency.ID = 4;
             agency.name = "";
             agency.city = "";
             agency.state = "";
@@ -31,11 +31,25 @@ namespace EventTermProject
 
             //string state = ddlState.SelectedValue;
             //string city = txtCity.Text;
-            string state = "PA";
-            string city = "Philadelphia";
+            string state = "NV";
+            string city = "Las Vegas";
             gvEvents.DataSource = eventService.GetEvents(agency, city, state);
             gvEvents.DataBind();
 
+
+        }
+
+        protected void btnFindEvents_Click(object sender, EventArgs e)
+        {
+            localRef.Activity activity = new localRef.Activity();
+            activity.day = "M";
+            activity.time = "2:00 pm";
+            activity.type = "Tour";
+
+            string state = "PA";
+            string city = "Philadelphia";
+            gvEvents.DataSource = eventService.FindEvents(activity, city, state);
+            gvEvents.DataBind();
 
         }
     }

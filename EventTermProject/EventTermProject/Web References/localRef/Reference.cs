@@ -113,26 +113,26 @@ namespace EventTermProject.localRef {
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/FindEvents", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public System.Data.DataSet FindEvents(object activities, string city, string state) {
+        public System.Data.DataSet FindEvents(Activity activity, string city, string state) {
             object[] results = this.Invoke("FindEvents", new object[] {
-                        activities,
+                        activity,
                         city,
                         state});
             return ((System.Data.DataSet)(results[0]));
         }
         
         /// <remarks/>
-        public void FindEventsAsync(object activities, string city, string state) {
-            this.FindEventsAsync(activities, city, state, null);
+        public void FindEventsAsync(Activity activity, string city, string state) {
+            this.FindEventsAsync(activity, city, state, null);
         }
         
         /// <remarks/>
-        public void FindEventsAsync(object activities, string city, string state, object userState) {
+        public void FindEventsAsync(Activity activity, string city, string state, object userState) {
             if ((this.FindEventsOperationCompleted == null)) {
                 this.FindEventsOperationCompleted = new System.Threading.SendOrPostCallback(this.OnFindEventsOperationCompleted);
             }
             this.InvokeAsync("FindEvents", new object[] {
-                        activities,
+                        activity,
                         city,
                         state}, this.FindEventsOperationCompleted, userState);
         }
@@ -240,6 +240,51 @@ namespace EventTermProject.localRef {
             }
             set {
                 this.stateField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34230")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class Activity {
+        
+        private string typeField;
+        
+        private string dayField;
+        
+        private string timeField;
+        
+        /// <remarks/>
+        public string type {
+            get {
+                return this.typeField;
+            }
+            set {
+                this.typeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string day {
+            get {
+                return this.dayField;
+            }
+            set {
+                this.dayField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string time {
+            get {
+                return this.timeField;
+            }
+            set {
+                this.timeField = value;
             }
         }
     }
