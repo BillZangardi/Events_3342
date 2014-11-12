@@ -52,5 +52,26 @@ namespace EventTermProject
             gvEvents.DataBind();
 
         }
+
+        protected void btnAddReserve_Click(object sender, EventArgs e)
+        {
+            localRef.Event eventObj = new localRef.Event();
+            localRef.Customer custObj = new localRef.Customer();
+            eventObj.ID = 2;
+            eventObj.AgencyID = 2;
+            custObj.CustomerEmail = "Bill";
+            custObj.CustomerLastName = "Zangardi";
+            custObj.CustomerPhone = "555-555-1234";
+            custObj.CustomerEmail = "Test@test.com";
+            if (eventService.Reserve(eventObj, custObj))
+            {
+                lblError.Text = "It worked";
+            }
+            else
+            {
+                lblError.Text = "It didn't work";
+            }
+
+        }
     }
 }

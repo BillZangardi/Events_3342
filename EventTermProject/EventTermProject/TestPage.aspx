@@ -75,8 +75,14 @@
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Button ID="btnFindEvents" runat="server" OnClick="btnFindEvents_Click" Text="Test Find Events" />
         <br />
+        <asp:Button ID="btnAddReserve" runat="server" OnClick="btnAddReserve_Click" Text="Test Add Reservation" />
+        <asp:Label ID="lblError" runat="server"></asp:Label>
         <br />
         <asp:GridView ID="gvEvents" runat="server">
+        </asp:GridView>
+        <asp:GridView ID="gvReservations" runat="server">
+        </asp:GridView>
+        <asp:GridView ID="gvAgencies" runat="server">
         </asp:GridView>
     </form>
 </body>

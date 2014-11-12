@@ -11,9 +11,9 @@ namespace EventTermProjectWS
     public class DBConnect
     {
         // at temple for deployment
-        //String SqlConnectString = "server=cis-mssql1.temple.edu;Database=fa14_3342_tud24174;User id=tud24174;Password=Ji8ief1o";
+        String SqlConnectString = "server=cis-mssql1.temple.edu;Database=fa14_3342_tud24174;User id=tud24174;Password=Ji8ief1o";
 
-        String SqlConnectString = "server=127.0.0.1,5555;Database=fa14_3342_tud24174;User id=tud24174;Password=Ji8ief1o";
+        //String SqlConnectString = "server=127.0.0.1,5555;Database=fa14_3342_tud24174;User id=tud24174;Password=Ji8ief1o";
         SqlConnection myConnectionSql;
         SqlCommand objCmd;
         SqlDataReader objDataReader;

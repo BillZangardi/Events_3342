@@ -3,3 +3,8 @@ C:\Users\Nicole\Documents\GitHub\Events_3342\EventTermProject\EventTermProject\b
 C:\Users\Nicole\Documents\GitHub\Events_3342\EventTermProject\EventTermProject\obj\Debug\EventTermProject.csprojResolveAssemblyReference.cache
 C:\Users\Nicole\Documents\GitHub\Events_3342\EventTermProject\EventTermProject\obj\Debug\EventTermProject.dll
 C:\Users\Nicole\Documents\GitHub\Events_3342\EventTermProject\EventTermProject\obj\Debug\EventTermProject.pdb
+C:\Users\tud03191\Desktop\Events_3342-master\EventTermProject\EventTermProject\bin\EventTermProject.dll
+C:\Users\tud03191\Desktop\Events_3342-master\EventTermProject\EventTermProject\bin\EventTermProject.pdb
+C:\Users\tud03191\Desktop\Events_3342-master\EventTermProject\EventTermProject\obj\Debug\EventTermProject.csprojResolveAssemblyReference.cache
+C:\Users\tud03191\Desktop\Events_3342-master\EventTermProject\EventTermProject\obj\Debug\EventTermProject.dll
+C:\Users\tud03191\Desktop\Events_3342-master\EventTermProject\EventTermProject\obj\Debug\EventTermProject.pdb
