@@ -63,7 +63,7 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </Content>
-    <None Include="Web References\localRef\EventService.disco" />
+    <Content Include="Web References\localRef\EventService.disco" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -94,11 +94,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Web References\localRef\EventService.wsdl" />
-    <None Include="Web References\localRef\Reference.map">
+    <Content Include="Web References\localRef\EventService.wsdl" />
+    <Content Include="Web References\localRef\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
