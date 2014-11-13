@@ -16,6 +16,7 @@ namespace EventTermProjectWS
         private string eventCity;
         private string eventState;
         private int agencyID;
+        private double eventPrice;
 
 
         //getters to allow properties to be public and used elsewhere
@@ -66,5 +67,12 @@ namespace EventTermProjectWS
             get { return agencyID; }
             set { agencyID = value; }
         }
+
+        public double Price
+        {
+            get { return eventPrice; }
+            set { eventPrice = value; }
+        }
+
     }
 }

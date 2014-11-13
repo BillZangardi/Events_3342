@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data;
 
 namespace EventTermProject
 {
@@ -14,7 +15,13 @@ namespace EventTermProject
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            string state = "";
+            string city = "";
+            DataSet myDs = eventService.GetEventAgencies(city, state);
+            ddlAgency.DataSource = myDs.Tables[0];
+            ddlAgency.DataTextField = "agencyName";
+            ddlAgency.DataValueField = "agencyName";
+            ddlAgency.DataBind();
         }
 
         protected void btnTestGetEvents_Click(object sender, EventArgs e)
@@ -59,7 +66,7 @@ namespace EventTermProject
             localRef.Customer custObj = new localRef.Customer();
             eventObj.ID = 2;
             eventObj.AgencyID = 2;
-            custObj.CustomerEmail = "Bill";
+            custObj.CustomerFirstName = "Bill";
             custObj.CustomerLastName = "Zangardi";
             custObj.CustomerPhone = "555-555-1234";
             custObj.CustomerEmail = "Test@test.com";
@@ -72,6 +79,14 @@ namespace EventTermProject
                 lblError.Text = "It didn't work";
             }
 
+        }
+
+        protected void btnGetAgencies_Click(object sender, EventArgs e)
+        {
+            string state = "PA";
+            string city = "Philadelphia";
+            gvEvents.DataSource = eventService.GetEventAgencies(city, state);
+            gvEvents.DataBind();
         }
     }
 }

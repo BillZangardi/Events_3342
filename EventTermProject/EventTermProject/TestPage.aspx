@@ -15,7 +15,7 @@
         </asp:DropDownList>
         <br />
         <asp:DropDownList ID="ddlState" runat="server">
-            <asp:ListItem Value="1">state</asp:ListItem>
+            <asp:ListItem Value="null">state</asp:ListItem>
             <asp:ListItem>AL</asp:ListItem>
             <asp:ListItem>AK</asp:ListItem>
             <asp:ListItem>AZ</asp:ListItem>
@@ -68,15 +68,45 @@
             <asp:ListItem>WY</asp:ListItem>
         </asp:DropDownList>
         <br />
-        <asp:TextBox ID="txtCity" runat="server"></asp:TextBox>
+        <asp:DropDownList ID="ddlCity" runat="server">
+            <asp:ListItem>Las Vegas</asp:ListItem>
+            <asp:ListItem>Philadelphia</asp:ListItem>
+        </asp:DropDownList>
         <br />
+        <asp:DropDownList ID="ddlTime" runat="server">
+            <asp:ListItem Value="null">Time</asp:ListItem>
+            <asp:ListItem>12:00 pm</asp:ListItem>
+            <asp:ListItem>1:00 pm</asp:ListItem>
+            <asp:ListItem>2:00 pm</asp:ListItem>
+            <asp:ListItem>3:00 pm</asp:ListItem>
+            <asp:ListItem>4:00 pm</asp:ListItem>
+            <asp:ListItem>5:00 pm</asp:ListItem>
+            <asp:ListItem>6:00 pm</asp:ListItem>
+            <asp:ListItem>7:00 pm</asp:ListItem>
+            <asp:ListItem>8:00 pm</asp:ListItem>
+            <asp:ListItem>9:00 pm</asp:ListItem>
+            <asp:ListItem>10:00 pm</asp:ListItem>
+            <asp:ListItem>11:00 pm</asp:ListItem>
+            <asp:ListItem>12:00 am</asp:ListItem>
+        </asp:DropDownList>
         <br />
-        <asp:Button ID="btnTestGetEvents" runat="server" Text="Test GetEvents" OnClick="btnTestGetEvents_Click" />
+        <asp:DropDownList ID="ddlDay" runat="server">
+            <asp:ListItem Value="null">Day Of Week</asp:ListItem>
+            <asp:ListItem>Sunday</asp:ListItem>
+            <asp:ListItem Value="Monday">Monday</asp:ListItem>
+            <asp:ListItem Value="Tuesday">Tuesday</asp:ListItem>
+            <asp:ListItem Value="Wednesday">Wednesday</asp:ListItem>
+            <asp:ListItem Value="Thursday">Thursday</asp:ListItem>
+            <asp:ListItem Value="Friday">Friday</asp:ListItem>
+            <asp:ListItem>Saturday</asp:ListItem>
+        </asp:DropDownList>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:Button ID="btnFindEvents" runat="server" OnClick="btnFindEvents_Click" Text="Test Find Events" />
         <br />
+        <asp:Button ID="btnFindEvents" runat="server" OnClick="btnFindEvents_Click" Text="Test Find Events" />
+        <asp:Button ID="btnTestGetEvents" runat="server" Text="Test GetEvents" OnClick="btnTestGetEvents_Click" />
         <asp:Button ID="btnAddReserve" runat="server" OnClick="btnAddReserve_Click" Text="Test Add Reservation" />
         <asp:Label ID="lblError" runat="server"></asp:Label>
+        <asp:Button ID="btnGetAgencies" runat="server" OnClick="btnGetAgencies_Click" Text="Test Get Agencies" />
         <br />
         <asp:GridView ID="gvEvents" runat="server">
         </asp:GridView>

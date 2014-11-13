@@ -7,3 +7,4 @@ C:\Users\tud03191\Desktop\Events_3342-master\EventTermProject\EventTermProjectWS
 C:\Users\tud03191\Desktop\Events_3342-master\EventTermProject\EventTermProjectWS\bin\EventTermProjectWS.pdb
 C:\Users\tud03191\Desktop\Events_3342-master\EventTermProject\EventTermProjectWS\obj\Debug\EventTermProjectWS.dll
 C:\Users\tud03191\Desktop\Events_3342-master\EventTermProject\EventTermProjectWS\obj\Debug\EventTermProjectWS.pdb
+C:\Users\tud03191\Desktop\Events_3342-master\EventTermProject\EventTermProjectWS\obj\Debug\EventTermProjectWS.csprojResolveAssemblyReference.cache

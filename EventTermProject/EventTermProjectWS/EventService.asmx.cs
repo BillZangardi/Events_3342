@@ -81,7 +81,7 @@ namespace EventTermProjectWS
             objCommand.CommandText = "Reserve";
 
             Random rnd = new Random();
-            int reserveId = rnd.Next(1, 1000000000);
+            int reserveId = rnd.Next(1, 1000);
             objCommand.Parameters.AddWithValue("@reserveID", reserveId);
             objCommand.Parameters.AddWithValue("@eventID", eventObj.ID);
             objCommand.Parameters.AddWithValue("@agencyID", eventObj.AgencyID);
@@ -90,7 +90,7 @@ namespace EventTermProjectWS
             objCommand.Parameters.AddWithValue("@email", custObj.CustomerEmail);
             objCommand.Parameters.AddWithValue("@phone", custObj.CustomerPhone);
             DBConnect objDB = new DBConnect();
-            if (objDB.DoUpdateUsingCmdObj(objCommand) >= 0)
+            if (objDB.DoUpdateUsingCmdObj(objCommand) > 0)
             {
                 return true;
             }

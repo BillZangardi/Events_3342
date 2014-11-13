@@ -122,7 +122,7 @@
       <CachedDynamicPropName>
       </CachedDynamicPropName>
       <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
-      <CachedSettingsPropName>EventTermProject_localRef_EventService</CachedSettingsPropName>
+      <CachedSettingsPropName>EventTermProject_localhost_EventService</CachedSettingsPropName>
     </WebReferenceUrl>
   </ItemGroup>
   <PropertyGroup>
