@@ -16,7 +16,7 @@
         <br />
         <asp:DropDownList ID="ddlState" runat="server">
             <asp:ListItem Value="null">state</asp:ListItem>
-            <asp:ListItem>AL</asp:ListItem>
+<%--            <asp:ListItem>AL</asp:ListItem>
             <asp:ListItem>AK</asp:ListItem>
             <asp:ListItem>AZ</asp:ListItem>
             <asp:ListItem>AR</asp:ListItem>
@@ -42,9 +42,9 @@
             <asp:ListItem>MS</asp:ListItem>
             <asp:ListItem>MO</asp:ListItem>
             <asp:ListItem>MT</asp:ListItem>
-            <asp:ListItem>NE</asp:ListItem>
+            <asp:ListItem>NE</asp:ListItem>--%>
             <asp:ListItem>NV</asp:ListItem>
-            <asp:ListItem>NH</asp:ListItem>
+<%--            <asp:ListItem>NH</asp:ListItem>
             <asp:ListItem>NJ</asp:ListItem>
             <asp:ListItem>NM</asp:ListItem>
             <asp:ListItem>NY</asp:ListItem>
@@ -52,9 +52,9 @@
             <asp:ListItem>ND</asp:ListItem>
             <asp:ListItem>OH</asp:ListItem>
             <asp:ListItem>OK</asp:ListItem>
-            <asp:ListItem>OR</asp:ListItem>
+            <asp:ListItem>OR</asp:ListItem>--%>
             <asp:ListItem>PA</asp:ListItem>
-            <asp:ListItem>RI</asp:ListItem>
+<%--            <asp:ListItem>RI</asp:ListItem>
             <asp:ListItem>SC</asp:ListItem>
             <asp:ListItem>SD</asp:ListItem>
             <asp:ListItem>TN</asp:ListItem>
@@ -65,7 +65,7 @@
             <asp:ListItem>WA</asp:ListItem>
             <asp:ListItem>WV</asp:ListItem>
             <asp:ListItem>WI</asp:ListItem>
-            <asp:ListItem>WY</asp:ListItem>
+            <asp:ListItem>WY</asp:ListItem>--%>
         </asp:DropDownList>
         <br />
         <asp:DropDownList ID="ddlCity" runat="server">

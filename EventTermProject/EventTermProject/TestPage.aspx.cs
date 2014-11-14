@@ -15,20 +15,24 @@ namespace EventTermProject
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            string state = "";
-            string city = "";
-            DataSet myDs = eventService.GetEventAgencies(city, state);
-            ddlAgency.DataSource = myDs.Tables[0];
-            ddlAgency.DataTextField = "agencyName";
-            ddlAgency.DataValueField = "agencyName";
-            ddlAgency.DataBind();
+            if (!IsPostBack)
+            {
+                string state = "";
+                string city = "";
+                DataSet myDs = eventService.GetEventAgencies(city, state);
+                ddlAgency.DataSource = myDs.Tables[0];
+                ddlAgency.DataTextField = "agencyName";
+                ddlAgency.DataValueField = "agencyID";
+                ddlAgency.DataBind();
+            }
         }
 
         protected void btnTestGetEvents_Click(object sender, EventArgs e)
         {
             localRef.Agency agency = new localRef.Agency();
 
-            agency.ID = 4;
+            string agencyID = ddlAgency.SelectedValue;
+            agency.ID = int.Parse(agencyID);
             agency.name = "";
             agency.city = "";
             agency.state = "";
@@ -36,10 +40,10 @@ namespace EventTermProject
             agency.phone = "";
            
 
-            //string state = ddlState.SelectedValue;
-            //string city = txtCity.Text;
-            string state = "NV";
-            string city = "Las Vegas";
+            string state = ddlState.SelectedValue;
+            string city = ddlCity.SelectedValue;
+            //string state = "NV";
+            //string city = "Las Vegas";
             gvEvents.DataSource = eventService.GetEvents(agency, city, state);
             gvEvents.DataBind();
 
@@ -49,6 +53,7 @@ namespace EventTermProject
         protected void btnFindEvents_Click(object sender, EventArgs e)
         {
             localRef.Activity activity = new localRef.Activity();
+
             activity.day = "M";
             activity.time = "2:00 pm";
             activity.type = "Tour";
