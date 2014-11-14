@@ -1,0 +1,6 @@
+C:\Users\Nicole\Documents\GitHub\Events_3342\EventTermProject\EventTermProject\bin\EventTermProject.dll
+C:\Users\Nicole\Documents\GitHub\Events_3342\EventTermProject\EventTermProject\bin\EventTermProject.XmlSerializers.dll
+C:\Users\Nicole\Documents\GitHub\Events_3342\EventTermProject\EventTermProject\bin\EventTermProject.pdb
+C:\Users\Nicole\Documents\GitHub\Events_3342\EventTermProject\EventTermProject\obj\Release\EventTermProject.dll
+C:\Users\Nicole\Documents\GitHub\Events_3342\EventTermProject\EventTermProject\obj\Release\EventTermProject.pdb
+C:\Users\Nicole\Documents\GitHub\Events_3342\EventTermProject\EventTermProject\obj\Release\EventTermProject.XmlSerializers.dll

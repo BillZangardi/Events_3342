@@ -57,13 +57,12 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ServiceDescription.aspx" />
     <Content Include="TestPage.aspx" />
     <Content Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </Content>
-    <Content Include="Web References\localRef\EventService.disco" />
+    <None Include="Web References\publishRef\EventService.disco" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -73,13 +72,6 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="ServiceDescription.aspx.cs">
-      <DependentUpon>ServiceDescription.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ServiceDescription.aspx.designer.cs">
-      <DependentUpon>ServiceDescription.aspx</DependentUpon>
-    </Compile>
     <Compile Include="TestPage.aspx.cs">
       <DependentUpon>TestPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -87,18 +79,19 @@
     <Compile Include="TestPage.aspx.designer.cs">
       <DependentUpon>TestPage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Web References\localRef\Reference.cs">
+    <Compile Include="Web References\publishRef\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.map</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Web References\localRef\EventService.wsdl" />
-    <Content Include="Web References\localRef\Reference.map">
+    <None Include="Web References\publishRef\EventService.wsdl" />
+    <None Include="Web References\publishRef\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
-    </Content>
+    </None>
+    <None Include="Properties\PublishProfiles\term project events.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -113,16 +106,16 @@
     <WebReferences Include="Web References\" />
   </ItemGroup>
   <ItemGroup>
-    <WebReferenceUrl Include="http://localhost:58165/EventService.asmx">
+    <WebReferenceUrl Include="http://cis-iis2.temple.edu/Fall2014/CIS3342_tud24174/TermProjectWS/EventService.asmx">
       <UrlBehavior>Dynamic</UrlBehavior>
-      <RelPath>Web References\localRef\</RelPath>
-      <UpdateFromURL>http://localhost:58165/EventService.asmx</UpdateFromURL>
+      <RelPath>Web References\publishRef\</RelPath>
+      <UpdateFromURL>http://cis-iis2.temple.edu/Fall2014/CIS3342_tud24174/TermProjectWS/EventService.asmx</UpdateFromURL>
       <ServiceLocationURL>
       </ServiceLocationURL>
       <CachedDynamicPropName>
       </CachedDynamicPropName>
       <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
-      <CachedSettingsPropName>EventTermProject_localRef_EventService</CachedSettingsPropName>
+      <CachedSettingsPropName>EventTermProject_publishRef_EventService</CachedSettingsPropName>
     </WebReferenceUrl>
   </ItemGroup>
   <PropertyGroup>

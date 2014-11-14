@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace EventTermProject
+namespace EventTermProjectWS
 {
     public partial class ServiceDescription : System.Web.UI.Page
     {

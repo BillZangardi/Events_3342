@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ServiceDescription.aspx.cs" Inherits="EventTermProject.ServiceDescription" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ServiceDescription.aspx.cs" Inherits="EventTermProjectWS.ServiceDescription" %>
 
 <!DOCTYPE html>
 
@@ -82,6 +82,58 @@ p.MsoListParagraph
 		<li>(String)CustomerLastName</li>
 		<li>(String)CustomerPhone</li>
 		<li>(String)CustomerEmail</li>
+
+	</ul>
+
+     <hr />
+    <h2>Customer Class</h2>
+    <p>The Customer class defines an instance of a Customer:</p>
+	<ul>
+        <li>(int)customerID</li>
+		<li>(String)customerFirstName</li>
+		<li>(String)customerLastName</li>
+		<li>(String)customerPhone</li>
+		<li>(String)customerEmail</li>
+	</ul>
+
+
+     <hr />
+    <h2>Agency Class</h2>
+    <p>The Agency class defines an instance of an Agency:</p>
+	<ul>
+		<li>(int)agencyID</li>
+		<li>(String)agencyName</li>
+		<li>(String)agencyPhone</li>
+		<li>(String)agencyEmail</li>
+        <li>(String)agencyCity</li>
+		<li>(String)agencyState</li>
+
+	</ul>
+
+
+     <hr />
+    <h2>Activity Class</h2>
+    <p>The Activity class defines an instance of a Activity:</p>
+	<ul>
+		<li>(String)eventType</li>
+		<li>(String)eventDay</li>
+		<li>(String)eventTime</li>
+
+	</ul>
+
+     <hr />
+    <h2>Event Class</h2>
+    <p>The Event class defines an instance of a Event:</p>
+	<ul>
+		<li>(int)eventID</li>
+		<li>(String)eventName</li>
+		<li>(String)eventType</li>
+		<li>(String)eventDay</li>
+        <li>(String)eventTime</li>
+		<li>(String)eventCity</li>
+		<li>(String)eventState</li>
+        <li>(int)agencyID</li>
+		<li>(double)eventPrice</li>
 
 	</ul>
 	<hr>

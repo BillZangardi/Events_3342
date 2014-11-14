@@ -26,10 +26,11 @@ namespace EventTermProject.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost:58165/EventService.asmx")]
-        public string EventTermProject_localRef_EventService {
+        [global::System.Configuration.DefaultSettingValueAttribute("http://cis-iis2.temple.edu/Fall2014/CIS3342_tud24174/TermProjectWS/EventService.a" +
+            "smx")]
+        public string EventTermProject_publishRef_EventService {
             get {
-                return ((string)(this["EventTermProject_localRef_EventService"]));
+                return ((string)(this["EventTermProject_publishRef_EventService"]));
             }
         }
     }

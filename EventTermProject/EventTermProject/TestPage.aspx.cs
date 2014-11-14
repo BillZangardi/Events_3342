@@ -11,7 +11,7 @@ namespace EventTermProject
     public partial class TestPage : System.Web.UI.Page
     {
 
-        localRef.EventService eventService = new localRef.EventService();
+        publishRef.EventService eventService = new publishRef.EventService();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -20,10 +20,7 @@ namespace EventTermProject
                 string state = "ALL";
                 string city = "";
                 DataSet myDs = eventService.GetEventAgencies(city, state);
-                ddlAgency.DataSource = myDs.Tables[0];
-                ddlAgency.DataTextField = "agencyName";
-                ddlAgency.DataValueField = "agencyID";
-                ddlAgency.DataBind();
+              
 
                 ddlAgency0.DataSource = myDs.Tables[0];
                 ddlAgency0.DataTextField = "agencyName";
@@ -34,7 +31,7 @@ namespace EventTermProject
 
         protected void btnTestGetEvents_Click(object sender, EventArgs e)
         {
-            localRef.Agency agency = new localRef.Agency();
+            publishRef.Agency agency = new publishRef.Agency();
             if (ddlAgency0.SelectedValue != "")
             {
                 agency.ID = int.Parse(ddlAgency0.SelectedValue);
@@ -58,7 +55,7 @@ namespace EventTermProject
 
         protected void btnFindEvents_Click(object sender, EventArgs e)
         {
-            localRef.Activity activity = new localRef.Activity();
+            publishRef.Activity activity = new publishRef.Activity();
 
             if (string.IsNullOrEmpty(ddlDay.SelectedValue))
             {
@@ -95,8 +92,8 @@ namespace EventTermProject
 
         protected void btnAddReserve_Click(object sender, EventArgs e)
         {
-            localRef.Event eventObj = new localRef.Event();
-            localRef.Customer custObj = new localRef.Customer();
+            publishRef.Event eventObj = new publishRef.Event();
+            publishRef.Customer custObj = new publishRef.Customer();
             eventObj.ID = 2;
             eventObj.AgencyID = 2;
             custObj.CustomerFirstName = "Bill";
