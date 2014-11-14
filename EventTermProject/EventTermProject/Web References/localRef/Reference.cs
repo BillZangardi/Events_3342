@@ -42,7 +42,7 @@ namespace EventTermProject.localRef {
         
         /// <remarks/>
         public EventService() {
-            this.Url = global::EventTermProject.Properties.Settings.Default.EventTermProject_localhost_EventService;
+            this.Url = global::EventTermProject.Properties.Settings.Default.EventTermProject_localRef_EventService;
             if ((this.IsLocalFileSystemWebService(this.Url) == true)) {
                 this.UseDefaultCredentials = true;
                 this.useDefaultCredentialsSetExplicitly = false;

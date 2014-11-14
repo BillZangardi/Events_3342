@@ -15,20 +15,30 @@ namespace EventTermProject
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            string state = "";
-            string city = "";
-            DataSet myDs = eventService.GetEventAgencies(city, state);
-            ddlAgency.DataSource = myDs.Tables[0];
-            ddlAgency.DataTextField = "agencyName";
-            ddlAgency.DataValueField = "agencyID";
-            ddlAgency.DataBind();
+            if (!IsPostBack)
+            {
+                string state = "ALL";
+                string city = "";
+                DataSet myDs = eventService.GetEventAgencies(city, state);
+                ddlAgency.DataSource = myDs.Tables[0];
+                ddlAgency.DataTextField = "agencyName";
+                ddlAgency.DataValueField = "agencyID";
+                ddlAgency.DataBind();
+
+                ddlAgency0.DataSource = myDs.Tables[0];
+                ddlAgency0.DataTextField = "agencyName";
+                ddlAgency0.DataValueField = "agencyID";
+                ddlAgency0.DataBind();
+            }
         }
 
         protected void btnTestGetEvents_Click(object sender, EventArgs e)
         {
             localRef.Agency agency = new localRef.Agency();
-
-            agency.ID = int.Parse(ddlAgency.SelectedValue);
+            if (ddlAgency0.SelectedValue != "")
+            {
+                agency.ID = int.Parse(ddlAgency0.SelectedValue);
+            }
             agency.name = "";
             agency.city = "";
             agency.state = "";
@@ -49,34 +59,37 @@ namespace EventTermProject
         protected void btnFindEvents_Click(object sender, EventArgs e)
         {
             localRef.Activity activity = new localRef.Activity();
-            
+
             if (string.IsNullOrEmpty(ddlDay.SelectedValue))
             {
                 activity.day = "1";
-            }else
+            }
+            else
             {
-            activity.day = ddlDay.SelectedValue;
+                activity.day = ddlDay.SelectedValue;
             }
 
-           if (string.IsNullOrEmpty(ddlTime.SelectedValue))
-           {
-                activity.time = "1";
-            }else
+            if (string.IsNullOrEmpty(ddlTime.SelectedValue))
             {
-            activity.time = ddlTime.SelectedValue;
-           }
-          if (string.IsNullOrEmpty(ddlType.SelectedValue))
+                activity.time = "1";
+            }
+            else
+            {
+                activity.time = ddlTime.SelectedValue;
+            }
+            if (string.IsNullOrEmpty(ddlType.SelectedValue))
             {
                 activity.type = "1";
-            }else
+            }
+            else
             {
-            activity.type = ddlType.SelectedValue;
-          }
+                activity.type = ddlType.SelectedValue;
+            }
 
-            string state = ddlState.SelectedValue;
-            string city = ddlCity.SelectedValue;
-            gvEvents.DataSource = eventService.FindEvents(activity, city, state);
-            gvEvents.DataBind();
+            string state = ddlState1.SelectedValue;
+            string city = ddlCity1.SelectedValue;
+            gvEvents0.DataSource = eventService.FindEvents(activity, city, state);
+            gvEvents0.DataBind();
 
         }
 
@@ -103,10 +116,10 @@ namespace EventTermProject
 
         protected void btnGetAgencies_Click(object sender, EventArgs e)
         {
-            string state = "PA";
-            string city = "Philadelphia";
-            gvEvents.DataSource = eventService.GetEventAgencies(city, state);
-            gvEvents.DataBind();
+            string state = ddlState0.SelectedItem.Text;
+            string city = ddlCity0.SelectedItem.Text;
+            gvAgencies.DataSource = eventService.GetEventAgencies(city, state);
+            gvAgencies.DataBind();
         }
     }
 }
