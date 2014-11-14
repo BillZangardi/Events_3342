@@ -8,15 +8,14 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-    
-    </div>
+        <div>
+        </div>
         <asp:DropDownList ID="ddlAgency" runat="server" AppendDataBoundItems="true">
-            <asp:ListItem Value="null">Select Agency</asp:ListItem>
+            <asp:ListItem Value="">Select Agency</asp:ListItem>
         </asp:DropDownList>
         <br />
         <asp:DropDownList ID="ddlState" runat="server">
-<%--            <asp:ListItem>AL</asp:ListItem>
+            <%--            <asp:ListItem>AL</asp:ListItem>
             <asp:ListItem>AK</asp:ListItem>
             <asp:ListItem>AZ</asp:ListItem>
             <asp:ListItem>AR</asp:ListItem>
@@ -44,7 +43,7 @@
             <asp:ListItem>MT</asp:ListItem>
             <asp:ListItem>NE</asp:ListItem>--%>
             <asp:ListItem>NV</asp:ListItem>
-<%--            <asp:ListItem>NH</asp:ListItem>
+            <%--            <asp:ListItem>NH</asp:ListItem>
             <asp:ListItem>NJ</asp:ListItem>
             <asp:ListItem>NM</asp:ListItem>
             <asp:ListItem>NY</asp:ListItem>
@@ -54,7 +53,7 @@
             <asp:ListItem>OK</asp:ListItem>
             <asp:ListItem>OR</asp:ListItem>--%>
             <asp:ListItem>PA</asp:ListItem>
-<%--            <asp:ListItem>RI</asp:ListItem>
+            <%--            <asp:ListItem>RI</asp:ListItem>
             <asp:ListItem>SC</asp:ListItem>
             <asp:ListItem>SD</asp:ListItem>
             <asp:ListItem>TN</asp:ListItem>
@@ -74,7 +73,7 @@
         </asp:DropDownList>
         <br />
         <asp:DropDownList ID="ddlTime" runat="server">
-            <asp:ListItem Value="null">Select Time</asp:ListItem>
+            <asp:ListItem Value="">Select Time</asp:ListItem>
             <asp:ListItem>12:00 pm</asp:ListItem>
             <asp:ListItem>1:00 pm</asp:ListItem>
             <asp:ListItem>2:00 pm</asp:ListItem>
@@ -91,7 +90,7 @@
         </asp:DropDownList>
         <br />
         <asp:DropDownList ID="ddlDay" runat="server">
-            <asp:ListItem Value="null">Select Day Of Week</asp:ListItem>
+            <asp:ListItem Value="">Select Day Of Week</asp:ListItem>
             <asp:ListItem>Sunday</asp:ListItem>
             <asp:ListItem Value="Monday">Monday</asp:ListItem>
             <asp:ListItem Value="Tuesday">Tuesday</asp:ListItem>
@@ -101,6 +100,13 @@
             <asp:ListItem>Saturday</asp:ListItem>
         </asp:DropDownList>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:DropDownList ID="ddlType" runat="server">
+            <asp:ListItem Value="">Select Type of Event</asp:ListItem>
+
+            <asp:ListItem>Party</asp:ListItem>
+            <asp:ListItem>Show</asp:ListItem>
+            <asp:ListItem>Tour</asp:ListItem>
+        </asp:DropDownList>
         <br />
         <asp:Button ID="btnFindEvents" runat="server" OnClick="btnFindEvents_Click" Text="Test Find Events" />
         <asp:Button ID="btnTestGetEvents" runat="server" Text="Test GetEvents" OnClick="btnTestGetEvents_Click" />

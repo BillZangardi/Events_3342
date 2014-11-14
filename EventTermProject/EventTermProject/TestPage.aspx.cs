@@ -20,7 +20,7 @@ namespace EventTermProject
             DataSet myDs = eventService.GetEventAgencies(city, state);
             ddlAgency.DataSource = myDs.Tables[0];
             ddlAgency.DataTextField = "agencyName";
-            ddlAgency.DataValueField = "agencyName";
+            ddlAgency.DataValueField = "agencyID";
             ddlAgency.DataBind();
         }
 
@@ -28,18 +28,18 @@ namespace EventTermProject
         {
             localRef.Agency agency = new localRef.Agency();
 
-            agency.ID = 4;
+            agency.ID = int.Parse(ddlAgency.SelectedValue);
             agency.name = "";
             agency.city = "";
             agency.state = "";
             agency.email = "";
             agency.phone = "";
-           
 
-            //string state = ddlState.SelectedValue;
-            //string city = txtCity.Text;
-            string state = "NV";
-            string city = "Las Vegas";
+
+            string state = ddlState.SelectedItem.Text;
+            string city = ddlCity.SelectedItem.Text;
+            //string state = "NV";
+            //string city = "Las Vegas";
             gvEvents.DataSource = eventService.GetEvents(agency, city, state);
             gvEvents.DataBind();
 
@@ -49,12 +49,32 @@ namespace EventTermProject
         protected void btnFindEvents_Click(object sender, EventArgs e)
         {
             localRef.Activity activity = new localRef.Activity();
-            activity.day = "M";
-            activity.time = "2:00 pm";
-            activity.type = "Tour";
+            
+            if (string.IsNullOrEmpty(ddlDay.SelectedValue))
+            {
+                activity.day = "1";
+            }else
+            {
+            activity.day = ddlDay.SelectedValue;
+            }
 
-            string state = "PA";
-            string city = "Philadelphia";
+           if (string.IsNullOrEmpty(ddlTime.SelectedValue))
+           {
+                activity.time = "1";
+            }else
+            {
+            activity.time = ddlTime.SelectedValue;
+           }
+          if (string.IsNullOrEmpty(ddlType.SelectedValue))
+            {
+                activity.type = "1";
+            }else
+            {
+            activity.type = ddlType.SelectedValue;
+          }
+
+            string state = ddlState.SelectedValue;
+            string city = ddlCity.SelectedValue;
             gvEvents.DataSource = eventService.FindEvents(activity, city, state);
             gvEvents.DataBind();
 
