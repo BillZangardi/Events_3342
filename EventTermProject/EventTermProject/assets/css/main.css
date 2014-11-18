@@ -1,0 +1,206 @@
+/*
+ * Author: Matt Morgis
+ *
+ */
+ 
+/* FONTS 
+ * Elsevier Standards.
+ * Nexus Serif Pro for body
+ * Nexus Sans Pro for headlines
+ */
+
+@font-face {
+    font-family: 'Droid Sans', sans-serif;
+    src: url(http://fonts.googleapis.com/css?family=Droid+Sans);
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Droid Sans', sans-serif;
+    src: url(http://fonts.googleapis.com/css?family=Droid+Sans);
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.navbar-default .navbar-nav  li  a {
+color: #FFFFFF;
+
+}
+
+/* OVERALL ASPECT */
+
+body {
+  background-color: #fff;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #004074;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+    
+    margin-top: 70px;
+}
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: 300;
+    color: #004074;
+}
+
+
+/* Paragraph & Typographic */
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+.centered {
+    text-align: center;
+}
+
+.mt {
+	margin-top: 40px;
+}
+
+/* Links */
+a {
+    color: #004e93;
+    word-wrap: break-word;
+
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+    color: #7b7b7b;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+/* Bootstrap Modifications */
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #a7a8aa;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+.navbar {
+	font-weight: 800;
+	font-size: 14px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: #004e93;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color: #004e93;
+	background-color: #ffffff;
+}
+
+.navbar-brand {
+	font-size: 60px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #fff;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.btn-theme {
+	color: #ffffff;
+	background-color: #004e93;
+	border-color: transparent;
+}
+
+.btn {
+	padding: 3%;
+	margin-bottom: 0;
+	font-size: 18px;
+	border: 5px solid transparent;
+	border-radius: 0px;
+	width: 30%
+}
+
+.lead {
+	letter-spacing: 1px;
+}
+
+
+/* hello */
+#hello {
+    background-color: #fff;
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 0px;
+}
+
+#hello h1 {
+	font-size: 90px;
+	color: #004e93;
+}
+
+#hello h2 {
+	color: #004074;
+	font-weight: 400;
+}
+
+/* apps */
+#app-submit {
+	width: 100%;
+	padding-bottom: 25px;
+}
+
+
+
+/* Footer */
+#f {
+	background-color: #004e93;
+    position:absolute;
+    width: 100%;
+    padding-top: 20px;
+}
+
+#f p {
+	color: white;
+	text-align: center;
+	font-weight: 400;
+}
+
+/* Image Opacity */
+.grid img {
+    opacity: .7;
+}
+.grid img:hover {
+    opacity: 1;
+}
+
+.dropdown-menu  li  a {
+	background: #004e93;
+}
