@@ -59,7 +59,6 @@ namespace EventTermProject
                     {
                         HttpCookie myCookie = new HttpCookie("CIS3342_Cookie");
                         myCookie.Values["email"] = email;
-                        myCookie.Values["password"] = passwordEncrypt.ToString();
                         myCookie.Expires = new DateTime(2025, 1, 1);
 
                         Response.Cookies.Add(myCookie);

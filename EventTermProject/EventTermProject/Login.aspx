@@ -16,6 +16,8 @@
     <div class="col-lg-4 col-lg-offset-4">
         <asp:CheckBox ID="chkRememberMe" runat="server" Text="Remember Me" />
         <br />
+        <asp:CheckBox ID="chkForgetMe" runat="server" Text="Forget Me" />
+        <br />
         <asp:Button ID="btnSubmit" runat="server" CssClass="btn btn-theme" Text="Submit" OnClick="btnSubmit_Click"/><br />
         <asp:Label ID="lblError" runat="server" Text=""></asp:Label><br />
         <asp:Button ID="btnSignUp" runat="server" CssClass="btn btn-theme" Text="Sign Up" OnClick="btnSignUp_Click"/><br />

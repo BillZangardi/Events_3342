@@ -17,7 +17,6 @@ namespace EventTermProject
             {
                 HttpCookie cookie = Request.Cookies["CIS3342_Cookie"];
                 txtUsername.Text = cookie.Values["email"].ToString();
-                txtPassword.Text = cookie.Values["password"].ToString();
             }
 
         }
@@ -32,6 +31,29 @@ namespace EventTermProject
             String email = txtUsername.Text;
             String password = txtPassword.Text;
             int passwordEncrypted = password.GetHashCode();
+
+
+            if ((chkForgetMe.Checked) && (chkRememberMe.Checked))
+            {
+                lblError.Text = "Select only 1 checkbox";
+            }
+            else if (chkRememberMe.Checked)
+            {
+                HttpCookie myCookie = new HttpCookie("CIS3342_Cookie");
+                myCookie.Values["email"] = email;
+                myCookie.Expires = new DateTime(2025, 1, 1);
+
+                Response.Cookies.Add(myCookie);
+            }
+
+            else if (chkForgetMe.Checked)
+            {
+                HttpCookie myCookie = new HttpCookie("CIS3342_Cookie");
+                myCookie.Values["email"] = "";
+                myCookie.Expires = new DateTime(2025, 1, 1);
+                Response.Cookies.Add(myCookie);
+            }
+
 
             bool allFieldsFilled = true;
             
@@ -51,16 +73,7 @@ namespace EventTermProject
                 DBConnect objDB = new DBConnect();
                 DataSet myDs = objDB.GetDataSetUsingCmdObj(objCommand);
                 if (myDs.Tables[0].Rows.Count > 0)
-                {
-                    if (chkRememberMe.Checked)
-                    {
-                        HttpCookie myCookie = new HttpCookie("CIS3342_Cookie");
-                        myCookie.Values["email"] = email;
-                        myCookie.Values["password"] = passwordEncrypted.ToString();
-                        myCookie.Expires = new DateTime(2025, 1, 1);
-
-                        Response.Cookies.Add(myCookie);
-                    }
+                {              
                     Session["LoggedIn"] = email;
                     Response.Redirect("Shop.aspx");
                 }
@@ -70,6 +83,8 @@ namespace EventTermProject
             {
                 lblError.Text = "Passwords Do Not Match or All fields not filled";
             }
+
+
         }
     }
 }
