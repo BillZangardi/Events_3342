@@ -3,13 +3,6 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     <h1>Sign-Up</h1>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4 col-lg-pull-7">
-                <asp:Button ID="btnLoginPage" runat="server" CssClass="btn btn-theme" Text="Back" OnClick="btnLoginPage_Click"/><br />
-            </div>
-        </div>
-    </div>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="form-group col-lg-4 col-lg-offset-4">

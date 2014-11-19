@@ -47,6 +47,16 @@
                     <a class="navbar-brand" href="Login.aspx">
                         <img src="assets/img/logo.png" /></a>
                 </div>
+                <div class="navbar-collapse collapse">
+                    <nav>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a id="A0" runat="server" href="Login.aspx">Login</a></li>
+                                <li><a id="A1" runat="server" href="SignUp.aspx">Sign Up</a></li>
+                            </ul>
+
+
+                    </nav>
+                </div>
             </div>
         </div>
 
