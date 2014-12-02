@@ -6,4 +6,8 @@
     <asp:Label ID="lblWelcome" runat="server"></asp:Label>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+        <asp:Button ID="btnCars" runat="server" CssClass="btn btn-theme" Text="Cars" OnClick="btnCars_Click"/><br />
+        <asp:Button ID="btnFlights" runat="server" CssClass="btn btn-theme" Text="Flights" OnClick="btnFlights_Click"/><br />
+        <asp:Button ID="btnEvents" runat="server" CssClass="btn btn-theme" Text="Events" OnClick="btnEvents_Click"/><br />
+        <asp:Button ID="btnHotels" runat="server" CssClass="btn btn-theme" Text="Hotels" OnClick="btnHotels_Click"/><br />
 </asp:Content>

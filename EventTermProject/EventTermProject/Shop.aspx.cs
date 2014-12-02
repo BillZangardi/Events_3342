@@ -20,5 +20,18 @@ namespace EventTermProject
                 lblWelcome.Text = "Welcome to our tarvel site " + Session["LoggedIn"];
             }
         }
+
+
+        protected void btnCars_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Cars.aspx");
+
+        }
+
+        protected void btnFlights_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Flights.aspx");
+
+        }
     }
 }
