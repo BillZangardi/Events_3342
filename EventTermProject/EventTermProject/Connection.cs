@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EventTermProjectWS
+namespace EventTermProject
 {
     public class DBConnect
     {
@@ -162,7 +162,7 @@ namespace EventTermProjectWS
         {
             // InParam is a DataSet. This function is used to Commit
             // the Dataset to the Data Source when updating a disconnected ds.
-            
+
             SqlDataAdapter myDataAdapter = new SqlDataAdapter();
             myDataAdapter.Update(theDataSet);
         }
@@ -200,7 +200,7 @@ namespace EventTermProjectWS
         {
             // Close any open connections to the database before the objects of this class
             // are garbage collected.
-           // myConnectionSql.Close();
+            // myConnectionSql.Close();
         }
 
     }   // end class

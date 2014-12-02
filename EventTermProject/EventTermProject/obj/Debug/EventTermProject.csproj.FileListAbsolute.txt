@@ -13,3 +13,5 @@ C:\Users\tud03191\Desktop\Events_3342\EventTermProject\EventTermProject\bin\Even
 C:\Users\tud03191\Desktop\Events_3342\EventTermProject\EventTermProject\obj\Debug\EventTermProject.csprojResolveAssemblyReference.cache
 C:\Users\tud03191\Desktop\Events_3342\EventTermProject\EventTermProject\obj\Debug\EventTermProject.dll
 C:\Users\tud03191\Desktop\Events_3342\EventTermProject\EventTermProject\obj\Debug\EventTermProject.pdb
+C:\Users\Nicole\Documents\GitHub\Events_3342\EventTermProject\EventTermProject\bin\EventTermProjectWS.dll
+C:\Users\Nicole\Documents\GitHub\Events_3342\EventTermProject\EventTermProject\bin\EventTermProjectWS.pdb

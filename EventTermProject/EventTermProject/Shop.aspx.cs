@@ -33,5 +33,15 @@ namespace EventTermProject
             Response.Redirect("Flights.aspx");
 
         }
+
+        protected void btnEvents_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btnHotels_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
