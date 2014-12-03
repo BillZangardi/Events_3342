@@ -67,13 +67,13 @@ namespace EventTermProject {
         protected global::System.Web.UI.WebControls.Button btnGo2;
         
         /// <summary>
-        /// ddlPrice control.
+        /// txtPrice control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlPrice;
+        protected global::System.Web.UI.WebControls.TextBox txtPrice;
         
         /// <summary>
         /// chkGPS control.
@@ -139,21 +139,30 @@ namespace EventTermProject {
         protected global::System.Web.UI.WebControls.DropDownList ddlDoors;
         
         /// <summary>
-        /// ddlMileage control.
+        /// txtMileage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlMileage;
+        protected global::System.Web.UI.WebControls.TextBox txtMileage;
         
         /// <summary>
-        /// btnAdd control.
+        /// btnSearch control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAdd;
+        protected global::System.Web.UI.WebControls.Button btnSearch;
+        
+        /// <summary>
+        /// gvCars control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gvCars;
     }
 }

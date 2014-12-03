@@ -3,7 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
  <h1>Cars</h1>
-    <asp:Label ID="lblWelcome" runat="server">Select a car to add to your vacation package</asp:Label>
+    <asp:Label ID="lblWelcome" runat="server">Find a car to add to your vacation package</asp:Label>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     StaState*:
@@ -80,8 +80,7 @@
     <br />
 
     price
-    <asp:DropDownList ID="ddlPrice" runat="server">
-    </asp:DropDownList>
+    <asp:TextBox ID="txtPrice" runat="server"></asp:TextBox>
     <br />
 
     GPS<asp:CheckBox ID="chkGPS" runat="server" Text="GPS" />
@@ -139,13 +138,18 @@
     <br />
 
     mileage
-    <asp:DropDownList ID="ddlMileage" runat="server">
-    </asp:DropDownList>
+    <asp:TextBox ID="txtMileage" runat="server"></asp:TextBox>
 
     <br />
     <br />
 
-        <asp:Button ID="btnAdd" runat="server" CssClass="btn btn-theme" Text="Add to Vacation Package" OnClick="btnAdd_Click"/><br />
+        <asp:Button ID="btnSearch" runat="server" CssClass="btn btn-theme" Text="Search" OnClick="btnSearch_Click"/>
+    <br />
+    <br />
+    <br />
+    <asp:GridView ID="gvCars" runat="server">
+    </asp:GridView>
+    <br />
 
 
 

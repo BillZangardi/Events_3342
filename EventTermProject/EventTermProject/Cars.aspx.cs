@@ -21,10 +21,7 @@ namespace EventTermProject
 
         }
 
-        protected void btnAdd_Click(object sender, EventArgs e)
-        {
 
-        }
 
         protected void btnGo_Click(object sender, EventArgs e)
         {
@@ -114,6 +111,38 @@ namespace EventTermProject
 
 
           
+        }
+
+        protected void btnSearch_Click(object sender, EventArgs e)
+        {
+            string city = ddlCity.SelectedValue;
+            string state = ddlState.SelectedValue;
+
+            CarService.Requirements requirements = new CarService.Requirements();
+            string gps = "no";
+            if (chkGPS.Checked)
+            {
+                gps = "yes";
+            }
+            string electric = "no";
+            if (chkElectric.Checked)
+            {
+                electric = "yes";
+            }
+
+            requirements.price = float.Parse(txtPrice.Text);
+            requirements.gps = gps;
+            requirements.type = ddlType.SelectedValue;
+            requirements.carClass = ddlCarClass.SelectedValue;
+            requirements.electric = electric;
+            requirements.passengers = int.Parse(ddlPassengers.SelectedValue);
+            requirements.luggage = int.Parse(ddlLuggage.SelectedValue);
+            requirements.doors = int.Parse(ddlDoors.SelectedValue);
+            requirements.mileage = int.Parse(txtMileage.Text);
+
+            DataSet findCars = Car.FindCars(requirements, city, state);
+            gvCars.DataSource = findCars;
+            gvCars.DataBind();
         }
     }
 }
