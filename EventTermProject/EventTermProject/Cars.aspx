@@ -6,7 +6,7 @@
     <asp:Label ID="lblWelcome" runat="server">Select a car to add to your vacation package</asp:Label>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    State*:
+    StaState*:
         <asp:DropDownList ID="ddlState" runat="server">
             <%--            <asp:ListItem>AL</asp:ListItem>
             <asp:ListItem>AK</asp:ListItem>
@@ -65,6 +65,8 @@
             <asp:ListItem>Philadelphia</asp:ListItem>
         </asp:DropDownList>
 
+    <asp:Button ID="btnGo" runat="server" OnClick="btnGo_Click" Text="Go" />
+
     <br />
     <hr />
     <br />
@@ -72,6 +74,7 @@
     <asp:DropDownList ID="ddlAgency" runat="server">
                
     </asp:DropDownList>
+    <asp:Button ID="btnGo2" runat="server" Text="Go" OnClick="btnGo2_Click" />
     <br />
     <hr />
     <br />
