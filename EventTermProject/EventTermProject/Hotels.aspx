@@ -5,7 +5,7 @@
     <h1>Shop Hotels</h1>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-<div class="row">
+    <div class="row">
      <div class="form-group col-lg-4 col-lg-offset-2">
         <asp:Label ID="Label3" runat="server" Text="City"></asp:Label>
         <asp:TextBox ID="txtCity" CssClass="form-control" runat="server"></asp:TextBox>
@@ -118,10 +118,16 @@
         </asp:DropDownList>
     </div>
 </div>
+<div class="row">
     <div class="col-lg-4 col-lg-offset-4">
         <asp:Button ID="btnSearchEvents" runat="server" CssClass="btn btn-theme btn-primary" Text="Search" OnClick="btnSearchEvents_Click"/><br />
         <asp:Label ID="lblError" runat="server" ForeColor="Red"></asp:Label>
     </div>
+</div>
+<div class="row">
+    <div style="width:100%; height:6px;"></div>
+</div>
+<div class="row">
     <div class="col-lg-12">
         <asp:GridView ID="gvHotels" CssClass="table table-bordered table-hover" runat="server" AutoGenerateColumns="False">
             <Columns>
@@ -137,4 +143,5 @@
             </Columns>
         </asp:GridView>
     </div>
+</div>
 </asp:Content>

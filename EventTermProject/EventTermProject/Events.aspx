@@ -5,11 +5,12 @@
     <h1>Shop Events</h1>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <div class="form-group col-lg-4 col-lg-offset-4">
+<div class="row">
+     <div class="form-group col-lg-4 col-lg-offset-2">
         <asp:Label ID="Label3" runat="server" Text="City"></asp:Label>
         <asp:TextBox ID="txtCity" CssClass="form-control" runat="server"></asp:TextBox>
     </div>
-    <div class="form-group col-lg-4 col-lg-offset-4">
+    <div class="form-group col-lg-4">
         <asp:Label ID="Label4" runat="server" Text="State"></asp:Label>
         <asp:DropDownList ID="ddlState" runat="server" CssClass="form-control">
             <asp:ListItem>AL</asp:ListItem>
@@ -64,7 +65,9 @@
             <asp:ListItem>WY</asp:ListItem>
         </asp:DropDownList>
     </div>
-    <div class="form-group col-lg-4 col-lg-offset-4">
+</div>
+<div class="row">
+    <div class="form-group col-lg-4 col-lg-offset-2">
         <asp:DropDownList CssClass="form-control" ID="ddlTime" runat="server">
             <asp:ListItem Value="">Select Time</asp:ListItem>
             <asp:ListItem>12:00 pm</asp:ListItem>
@@ -82,7 +85,7 @@
             <asp:ListItem>12:00 am</asp:ListItem>
         </asp:DropDownList>
     </div>
-    <div class="form-group col-lg-4 col-lg-offset-4">
+    <div class="form-group col-lg-4">
         <asp:DropDownList ID="ddlDay" CssClass="form-control" runat="server">
             <asp:ListItem Value="">Select Day Of Week</asp:ListItem>
             <asp:ListItem>Sunday</asp:ListItem>
@@ -94,6 +97,8 @@
             <asp:ListItem>Saturday</asp:ListItem>
         </asp:DropDownList>
     </div>
+</div>
+<div class="row">
     <div class="form-group col-lg-4 col-lg-offset-4">
         <asp:DropDownList ID="ddlType" CssClass="form-control" runat="server">
             <asp:ListItem Value="">Select Type of Event</asp:ListItem>
@@ -103,10 +108,17 @@
             <asp:ListItem>Tour</asp:ListItem>
         </asp:DropDownList>
     </div>
+</div>
+<div class="row">
     <div class="col-lg-4 col-lg-offset-4">
         <asp:Button ID="btnSearchEvents" runat="server" CssClass="btn btn-theme btn-primary" Text="Search" OnClick="btnSearchEvents_Click"/><br />
         <asp:Label ID="lblError" runat="server" ForeColor="Red"></asp:Label>
     </div>
+</div>
+<div class="row">
+    <div style="width:100%; height:6px;"></div>
+</div>
+<div class="row">
     <div class="col-lg-12">
         <asp:GridView ID="gvEvents" CssClass="table table-bordered table-hover" runat="server" AutoGenerateColumns="False" Width="100%">
             <Columns>
@@ -126,4 +138,5 @@
             </Columns>
         </asp:GridView>
     </div>
+</div>
 </asp:Content>
