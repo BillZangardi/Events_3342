@@ -1,12 +1,15 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="Cars.aspx.cs" Inherits="EventTermProject.Cars" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
- <h1>Cars</h1>
+    <h1>Cars</h1>
     <asp:Label ID="lblWelcome" runat="server">Find a car to add to your vacation package</asp:Label>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    StaState*:
+    <div runat="server" id="step1">
+        Step 1: Select a Location<br />
+        State:
         <asp:DropDownList ID="ddlState" runat="server">
             <%--            <asp:ListItem>AL</asp:ListItem>
             <asp:ListItem>AK</asp:ListItem>
@@ -59,48 +62,47 @@
             <asp:ListItem>WI</asp:ListItem>
             <asp:ListItem>WY</asp:ListItem>--%>
         </asp:DropDownList>
-    &nbsp;City*:
+        &nbsp;City:
         <asp:DropDownList ID="ddlCity" runat="server">
             <asp:ListItem>Las Vegas</asp:ListItem>
             <asp:ListItem>Philadelphia</asp:ListItem>
         </asp:DropDownList>
 
-    <asp:Button ID="btnGo" runat="server" OnClick="btnGo_Click" Text="Go" />
+        <asp:Button ID="btnGo" runat="server" OnClick="btnGo_Click" Text="Go" />
 
-    <br />
-    <hr />
-    <br />
-       Select an Agency
-    <asp:DropDownList ID="ddlAgency" runat="server">
-               
-    </asp:DropDownList>
-    <asp:Button ID="btnGo2" runat="server" Text="Go" OnClick="btnGo2_Click" />
-    <br />
-    <hr />
-    <br />
-
-    price
-    <asp:TextBox ID="txtPrice" runat="server"></asp:TextBox>
-    <br />
-
-    GPS<asp:CheckBox ID="chkGPS" runat="server" Text="GPS" />
-
-    <br />
-
-    type
+        <br />
+        <hr />
+    </div>
+    <div runat="server" id="step2">
+        Step 2: Select an Agency<br />
+        <asp:DropDownList ID="ddlAgency" runat="server">
+        </asp:DropDownList>
+        <asp:Button ID="btnGo2" runat="server" Text="Go" OnClick="btnGo2_Click" />
+        <br />
+        <hr />
+    </div>
+    <div runat="server" id="step3">
+        Step 3: Specify Requirements
+        <br />
+        <br />
+        Type:
     <asp:DropDownList ID="ddlType" runat="server">
     </asp:DropDownList>
-    <br />
-    carClass
+
+        Class:
     <asp:DropDownList ID="ddlCarClass" runat="server">
     </asp:DropDownList>
-    <br />
 
-    electric
-    <asp:CheckBox ID="chkElectric" runat="server" Text="Electric" />
-    <br />
 
-    passengers
+        Doors:
+    <asp:DropDownList ID="ddlDoors" runat="server">
+        <asp:ListItem>2</asp:ListItem>
+        <asp:ListItem>4</asp:ListItem>
+    </asp:DropDownList>
+        <br />
+        <br />
+
+        Passengers:
     <asp:DropDownList ID="ddlPassengers" runat="server">
         <asp:ListItem>1</asp:ListItem>
         <asp:ListItem>2</asp:ListItem>
@@ -112,11 +114,11 @@
         <asp:ListItem>7</asp:ListItem>
         <asp:ListItem>8</asp:ListItem>
     </asp:DropDownList>
-    <br />
 
-    luggage
+
+        Luggage:
     <asp:DropDownList ID="ddlLuggage" runat="server">
-                <asp:ListItem>1</asp:ListItem>
+        <asp:ListItem>1</asp:ListItem>
         <asp:ListItem>2</asp:ListItem>
         <asp:ListItem>3</asp:ListItem>
         <asp:ListItem>4</asp:ListItem>
@@ -128,28 +130,38 @@
         <asp:ListItem>9</asp:ListItem>
         <asp:ListItem>10</asp:ListItem>
     </asp:DropDownList>
-    <br />
+        <br />
+        <br />
 
-    doors
-    <asp:DropDownList ID="ddlDoors" runat="server">
-        <asp:ListItem>2</asp:ListItem>
-        <asp:ListItem>4</asp:ListItem>
-    </asp:DropDownList>
-    <br />
+        (Check for "Yes"):   
+    <asp:CheckBox ID="chkGPS" runat="server" Text="GPS       " />
 
-    mileage
+        <asp:CheckBox ID="chkElectric" runat="server" Text="Electric" />
+        <br />
+
+        <br />
+        Max Mileage:
     <asp:TextBox ID="txtMileage" runat="server"></asp:TextBox>
 
+        <br />
+        <br />
+
+        Max price:
+    <asp:TextBox ID="txtPrice" runat="server"></asp:TextBox>
+
+        <br />
+    
+
     <br />
+    <asp:Button ID="btnSearch" runat="server" Text="Search" OnClick="btnSearch_Click" />
     <br />
 
-        <asp:Button ID="btnSearch" runat="server" CssClass="btn btn-theme" Text="Search" OnClick="btnSearch_Click"/>
-    <br />
-    <br />
     <br />
     <asp:GridView ID="gvCars" runat="server">
     </asp:GridView>
     <br />
+
+        </div>
 
 
 

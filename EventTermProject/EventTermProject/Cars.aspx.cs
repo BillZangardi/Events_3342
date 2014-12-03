@@ -17,7 +17,11 @@ namespace EventTermProject
         protected void Page_Load(object sender, EventArgs e)
         {
 
-
+            if (!IsPostBack)
+            {
+                step2.Visible = false;
+                step3.Visible = false;
+            }
 
         }
 
@@ -32,6 +36,8 @@ namespace EventTermProject
             ddlAgency.DataTextField = "name";
             ddlAgency.DataValueField = "name";
             ddlAgency.DataBind();
+            step2.Visible = true;
+            step1.Visible = false;
 
         }
 
@@ -107,8 +113,9 @@ namespace EventTermProject
                     }
                 }
             }
-              
 
+            step2.Visible = false;
+            step3.Visible = true;
 
           
         }

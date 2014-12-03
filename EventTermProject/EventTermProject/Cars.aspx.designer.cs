@@ -22,6 +22,15 @@ namespace EventTermProject {
         protected global::System.Web.UI.WebControls.Label lblWelcome;
         
         /// <summary>
+        /// step1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl step1;
+        
+        /// <summary>
         /// ddlState control.
         /// </summary>
         /// <remarks>
@@ -49,6 +58,15 @@ namespace EventTermProject {
         protected global::System.Web.UI.WebControls.Button btnGo;
         
         /// <summary>
+        /// step2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl step2;
+        
+        /// <summary>
         /// ddlAgency control.
         /// </summary>
         /// <remarks>
@@ -67,22 +85,13 @@ namespace EventTermProject {
         protected global::System.Web.UI.WebControls.Button btnGo2;
         
         /// <summary>
-        /// txtPrice control.
+        /// step3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPrice;
-        
-        /// <summary>
-        /// chkGPS control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkGPS;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl step3;
         
         /// <summary>
         /// ddlType control.
@@ -103,13 +112,13 @@ namespace EventTermProject {
         protected global::System.Web.UI.WebControls.DropDownList ddlCarClass;
         
         /// <summary>
-        /// chkElectric control.
+        /// ddlDoors control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkElectric;
+        protected global::System.Web.UI.WebControls.DropDownList ddlDoors;
         
         /// <summary>
         /// ddlPassengers control.
@@ -130,13 +139,22 @@ namespace EventTermProject {
         protected global::System.Web.UI.WebControls.DropDownList ddlLuggage;
         
         /// <summary>
-        /// ddlDoors control.
+        /// chkGPS control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlDoors;
+        protected global::System.Web.UI.WebControls.CheckBox chkGPS;
+        
+        /// <summary>
+        /// chkElectric control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox chkElectric;
         
         /// <summary>
         /// txtMileage control.
@@ -146,6 +164,15 @@ namespace EventTermProject {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtMileage;
+        
+        /// <summary>
+        /// txtPrice control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtPrice;
         
         /// <summary>
         /// btnSearch control.

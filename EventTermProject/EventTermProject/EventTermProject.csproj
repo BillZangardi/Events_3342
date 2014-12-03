@@ -69,13 +69,13 @@
     <Content Include="SignUp.aspx" />
     <Content Include="Master.Master" />
     <Content Include="Shop.aspx" />
-    <Content Include="Web References\CarService\CarService.wsdl" />
-    <Content Include="Web References\CarService\Reference.map">
+    <None Include="Web References\CarService\CarService.wsdl" />
+    <None Include="Web References\CarService\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
-    </Content>
+    </None>
     <None Include="Web References\publishRef\EventService.disco" />
-    <Content Include="Web References\CarService\CarService.disco" />
+    <None Include="Web References\CarService\CarService.disco" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
