@@ -17,7 +17,7 @@ namespace EventTermProject
             }
             else
             {
-              lblWelcome.Text = "Welcome to our tarvel site " + Session["LoggedIn"];
+              lblWelcome.Text = "Welcome to our travel site " + Session["LoggedIn"];
             }
         }
 
