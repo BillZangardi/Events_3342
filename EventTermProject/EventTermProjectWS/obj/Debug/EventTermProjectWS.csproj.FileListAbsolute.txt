@@ -1,9 +1,9 @@
-C:\Users\Nicole\Documents\GitHub\Events_3342\EventTermProject\EventTermProjectWS\bin\EventTermProjectWS.dll
-C:\Users\Nicole\Documents\GitHub\Events_3342\EventTermProject\EventTermProjectWS\bin\EventTermProjectWS.pdb
-C:\Users\Nicole\Documents\GitHub\Events_3342\EventTermProject\EventTermProjectWS\obj\Debug\EventTermProjectWS.dll
-C:\Users\Nicole\Documents\GitHub\Events_3342\EventTermProject\EventTermProjectWS\obj\Debug\EventTermProjectWS.pdb
 C:\Users\tud03191\Desktop\Events_3342-master\EventTermProject\EventTermProjectWS\bin\EventTermProjectWS.dll
 C:\Users\tud03191\Desktop\Events_3342-master\EventTermProject\EventTermProjectWS\bin\EventTermProjectWS.pdb
 C:\Users\tud03191\Desktop\Events_3342-master\EventTermProject\EventTermProjectWS\obj\Debug\EventTermProjectWS.dll
 C:\Users\tud03191\Desktop\Events_3342-master\EventTermProject\EventTermProjectWS\obj\Debug\EventTermProjectWS.pdb
 C:\Users\tud03191\Desktop\Events_3342-master\EventTermProject\EventTermProjectWS\obj\Debug\EventTermProjectWS.csprojResolveAssemblyReference.cache
+C:\Users\Nicole\Documents\GitHub\Events_3342\EventTermProject\EventTermProjectWS\bin\EventTermProjectWS.dll
+C:\Users\Nicole\Documents\GitHub\Events_3342\EventTermProject\EventTermProjectWS\bin\EventTermProjectWS.pdb
+C:\Users\Nicole\Documents\GitHub\Events_3342\EventTermProject\EventTermProjectWS\obj\Debug\EventTermProjectWS.dll
+C:\Users\Nicole\Documents\GitHub\Events_3342\EventTermProject\EventTermProjectWS\obj\Debug\EventTermProjectWS.pdb

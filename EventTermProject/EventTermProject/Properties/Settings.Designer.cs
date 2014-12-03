@@ -33,5 +33,16 @@ namespace EventTermProject.Properties {
                 return ((string)(this["EventTermProject_publishRef_EventService"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://cis-iis2.temple.edu/Fall2014/CIS3342_tuc53874/TermProjectWS/CarService.asm" +
+            "x")]
+        public string EventTermProject_CarService_CarService {
+            get {
+                return ((string)(this["EventTermProject_CarService_CarService"]));
+            }
+        }
     }
 }

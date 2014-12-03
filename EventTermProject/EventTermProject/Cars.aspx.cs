@@ -9,7 +9,18 @@ namespace EventTermProject
 {
     public partial class Cars : System.Web.UI.Page
     {
+
+        CarService.CarService Car = new CarService.CarService();
+
+
         protected void Page_Load(object sender, EventArgs e)
+        {
+
+            
+
+        }
+
+        protected void btnAdd_Click(object sender, EventArgs e)
         {
 
         }
