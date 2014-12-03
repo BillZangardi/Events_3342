@@ -15,3 +15,10 @@ C:\Users\Nicole\Documents\GitHub\Events_3342\EventTermProject\EventTermProject\b
 C:\Users\Nicole\Documents\GitHub\Events_3342\EventTermProject\EventTermProject\obj\Debug\EventTermProject.csprojResolveAssemblyReference.cache
 C:\Users\Nicole\Documents\GitHub\Events_3342\EventTermProject\EventTermProject\obj\Debug\EventTermProject.dll
 C:\Users\Nicole\Documents\GitHub\Events_3342\EventTermProject\EventTermProject\obj\Debug\EventTermProject.pdb
+G:\cis3342\Events_3342\EventTermProject\EventTermProject\bin\EventTermProject.dll
+G:\cis3342\Events_3342\EventTermProject\EventTermProject\bin\EventTermProject.pdb
+G:\cis3342\Events_3342\EventTermProject\EventTermProject\bin\EventTermProjectWS.dll
+G:\cis3342\Events_3342\EventTermProject\EventTermProject\bin\EventTermProjectWS.pdb
+G:\cis3342\Events_3342\EventTermProject\EventTermProject\obj\Debug\EventTermProject.csprojResolveAssemblyReference.cache
+G:\cis3342\Events_3342\EventTermProject\EventTermProject\obj\Debug\EventTermProject.dll
+G:\cis3342\Events_3342\EventTermProject\EventTermProject\obj\Debug\EventTermProject.pdb

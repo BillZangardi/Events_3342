@@ -69,6 +69,7 @@
     <Content Include="SignUp.aspx" />
     <Content Include="Master.Master" />
     <Content Include="Shop.aspx" />
+    <Content Include="Events.aspx" />
     <None Include="Web References\CarService\CarService.wsdl" />
     <None Include="Web References\CarService\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
@@ -151,6 +152,13 @@
     </Compile>
     <Compile Include="Shop.aspx.designer.cs">
       <DependentUpon>Shop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Events.aspx.cs">
+      <DependentUpon>Events.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Events.aspx.designer.cs">
+      <DependentUpon>Events.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -51,6 +51,10 @@
                     <nav>
                             <ul class="nav navbar-nav navbar-right">
                                 <li><a id="A0" runat="server" href="Shop.aspx">Shop Packages</a></li>
+                                <li><a id="A2" runat="server" href="Flights.aspx">Flgihts</a></li>
+                                <li><a id="A3" runat="server" href="Cars.aspx">Cars</a></li>
+                                <li><a id="A4" runat="server" href="Hotels.aspx">Hotels</a></li>
+                                <li><a id="A5" runat="server" href="Events.aspx">Events</a></li>
                                 <li><a id="A1" runat="server" href="#">Cart</a></li>
                             </ul>
 
