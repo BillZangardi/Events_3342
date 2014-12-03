@@ -31,10 +31,13 @@ namespace EventTermProject
             {
                 lblError.Text = "Please Enter a City";
             }
-            gvHotels.DataSource = hotels.GetRoomsByAmenities(amenities, city, state);
-            gvHotels.DataBind();
-            gvHotels.UseAccessibleHeader = true;
-            gvHotels.HeaderRow.TableSection = TableRowSection.TableHeader;
+            else
+            {
+                gvHotels.DataSource = hotels.GetRoomsByAmenities(amenities, city, state);
+                gvHotels.DataBind();
+                gvHotels.UseAccessibleHeader = true;
+                gvHotels.HeaderRow.TableSection = TableRowSection.TableHeader;
+            }
         }
     }
 }

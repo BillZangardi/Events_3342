@@ -5,11 +5,12 @@
     <h1>Shop Hotels</h1>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <div class="form-group col-lg-4 col-lg-offset-4">
+<div class="row">
+     <div class="form-group col-lg-4 col-lg-offset-2">
         <asp:Label ID="Label3" runat="server" Text="City"></asp:Label>
         <asp:TextBox ID="txtCity" CssClass="form-control" runat="server"></asp:TextBox>
     </div>
-    <div class="form-group col-lg-4 col-lg-offset-4">
+    <div class="form-group col-lg-4">
         <asp:Label ID="Label4" runat="server" Text="State"></asp:Label>
         <asp:DropDownList ID="ddlState" runat="server" CssClass="form-control">
             <asp:ListItem>AL</asp:ListItem>
@@ -64,7 +65,9 @@
             <asp:ListItem>WY</asp:ListItem>
         </asp:DropDownList>
     </div>
-    <div class="form-group col-lg-4 col-lg-offset-4">
+</div>
+<div class="row">
+    <div class="form-group col-lg-4">
         <asp:Label ID="Label1" runat="server" Text="WiFi"></asp:Label>
         <asp:DropDownList CssClass="form-control" ID="ddlWifi" runat="server">
             <asp:ListItem Value="2">No Preference</asp:ListItem>
@@ -72,7 +75,7 @@
             <asp:ListItem Value="0">No</asp:ListItem>
         </asp:DropDownList>
     </div>
-    <div class="form-group col-lg-4 col-lg-offset-4">
+    <div class="form-group col-lg-4">
         <asp:Label ID="Label2" runat="server" Text="Smoking"></asp:Label>
         <asp:DropDownList CssClass="form-control" ID="ddlSmoking" runat="server">
             <asp:ListItem Value="2">No Preference</asp:ListItem>
@@ -80,7 +83,7 @@
             <asp:ListItem Value="0">No</asp:ListItem>
         </asp:DropDownList>
     </div>
-    <div class="form-group col-lg-4 col-lg-offset-4">
+    <div class="form-group col-lg-4">
         <asp:Label ID="Label5" runat="server" Text="Valet Parking"></asp:Label>
         <asp:DropDownList CssClass="form-control" ID="ddlValet" runat="server">
             <asp:ListItem Value="2">No Preference</asp:ListItem>
@@ -88,7 +91,9 @@
             <asp:ListItem Value="0">No</asp:ListItem>
         </asp:DropDownList>
     </div>
-    <div class="form-group col-lg-4 col-lg-offset-4">
+</div>
+<div class="row">
+    <div class="form-group col-lg-4">
         <asp:Label ID="Label6" runat="server" Text="Gym"></asp:Label>
         <asp:DropDownList CssClass="form-control" ID="ddlGym" runat="server">
             <asp:ListItem Value="2">No Preference</asp:ListItem>
@@ -96,7 +101,7 @@
             <asp:ListItem Value="0">No</asp:ListItem>
         </asp:DropDownList>
     </div>
-    <div class="form-group col-lg-4 col-lg-offset-4">
+    <div class="form-group col-lg-4">
         <asp:Label ID="Label7" runat="server" Text="Poolside Bar"></asp:Label>
         <asp:DropDownList CssClass="form-control" ID="ddlPoolside" runat="server">
             <asp:ListItem Value="2">No Preference</asp:ListItem>
@@ -104,7 +109,7 @@
             <asp:ListItem Value="0">No</asp:ListItem>
         </asp:DropDownList>
     </div>
-    <div class="form-group col-lg-4 col-lg-offset-4">
+    <div class="form-group col-lg-4">
         <asp:Label ID="Label8" runat="server" Text="Free Breakfast"></asp:Label>
         <asp:DropDownList CssClass="form-control" ID="ddlBreakfast" runat="server">
             <asp:ListItem Value="2">No Preference</asp:ListItem>
@@ -112,12 +117,24 @@
             <asp:ListItem Value="0">No</asp:ListItem>
         </asp:DropDownList>
     </div>
+</div>
     <div class="col-lg-4 col-lg-offset-4">
         <asp:Button ID="btnSearchEvents" runat="server" CssClass="btn btn-theme btn-primary" Text="Search" OnClick="btnSearchEvents_Click"/><br />
         <asp:Label ID="lblError" runat="server" ForeColor="Red"></asp:Label>
     </div>
     <div class="col-lg-12">
-        <asp:GridView ID="gvHotels" CssClass="table table-bordered table-hover" runat="server">
+        <asp:GridView ID="gvHotels" CssClass="table table-bordered table-hover" runat="server" AutoGenerateColumns="False">
+            <Columns>
+                <asp:BoundField DataField="HotelID" HeaderText="ID" Visible="false" />
+                <asp:BoundField DataField="Name" HeaderText="Hotel" />
+                <asp:BoundField DataField="RoomNum" HeaderText="Room" />
+                <asp:BoundField DataField="Price" HeaderText="Price" />
+                <asp:TemplateField HeaderText="Add to Cart">
+                    <ItemTemplate>
+                        <asp:Button ID="btnAddToCart" runat="server" CssClass="btn-primary" Text="Add" />
+                    </ItemTemplate>
+                </asp:TemplateField>
+            </Columns>
         </asp:GridView>
     </div>
 </asp:Content>
