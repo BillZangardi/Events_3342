@@ -8,5 +8,8 @@
     <Setting Name="EventTermProject_CarService_CarService" Type="(Web Service URL)" Scope="Application">
       <Value Profile="(Default)">http://cis-iis2.temple.edu/Fall2014/CIS3342_tuc53874/TermProjectWS/CarService.asmx</Value>
     </Setting>
+    <Setting Name="EventTermProject_HotelService_HotelService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://cis-iis2.temple.edu/Fall2014/CIS3342_tue55387/TermProjectWS/HotelService.asmx</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

@@ -70,16 +70,24 @@
     <Content Include="Master.Master" />
     <Content Include="Shop.aspx" />
     <Content Include="Events.aspx" />
+    <Content Include="Hotels.aspx" />
     <None Include="Web References\CarService\CarService.wsdl" />
     <None Include="Web References\CarService\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="Web References\HotelService\HotelService.wsdl" />
+    <Content Include="Web References\HotelService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
     <None Include="Web References\publishRef\EventService.disco" />
     <None Include="Web References\CarService\CarService.disco" />
+    <Content Include="Web References\HotelService\HotelService.disco" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Amenities.cs" />
     <Compile Include="Cars.aspx.cs">
       <DependentUpon>Cars.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -127,6 +135,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.map</DependentUpon>
     </Compile>
+    <Compile Include="Web References\HotelService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
     <Compile Include="Web References\publishRef\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -159,6 +172,13 @@
     </Compile>
     <Compile Include="Events.aspx.designer.cs">
       <DependentUpon>Events.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hotels.aspx.cs">
+      <DependentUpon>Hotels.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hotels.aspx.designer.cs">
+      <DependentUpon>Hotels.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -203,6 +223,17 @@
       </CachedDynamicPropName>
       <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
       <CachedSettingsPropName>EventTermProject_publishRef_EventService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://cis-iis2.temple.edu/Fall2014/CIS3342_tue55387/TermProjectWS/HotelService.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\HotelService\</RelPath>
+      <UpdateFromURL>http://cis-iis2.temple.edu/Fall2014/CIS3342_tue55387/TermProjectWS/HotelService.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>EventTermProject_HotelService_HotelService</CachedSettingsPropName>
     </WebReferenceUrl>
   </ItemGroup>
   <ItemGroup>
