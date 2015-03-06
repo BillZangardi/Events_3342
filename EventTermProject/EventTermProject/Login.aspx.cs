@@ -76,6 +76,18 @@ namespace EventTermProject
                 if (myDs.Tables[0].Rows.Count > 0)
                 {              
                     Session["LoggedIn"] = email;
+                    //deserialize the shoppers cart/VacationPackage object
+
+                        string customerEmail = (string)Session["LoggedIn"];
+                        Serialize serialize = new Serialize();
+                        VacationPackage vacationPackage = (VacationPackage)serialize.ReadCartFromDB(customerEmail);
+                        if (vacationPackage != null)
+                        {
+                            Session["VacationPackage"] = vacationPackage;
+                        }
+                    
+               
+
                     Response.Redirect("Shop.aspx");
                 }
                 else { lblError.Text = "Failed to Login"; }

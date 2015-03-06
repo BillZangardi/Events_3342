@@ -8,19 +8,80 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
     <LastUsedPlatform>Any CPU</LastUsedPlatform>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>X:\TermProject</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
+    <File Include="Admin.aspx">
+      <publishTime>12/08/2014 21:41:13</publishTime>
+    </File>
     <File Include="bin/EventTermProject.dll">
-      <publishTime>11/14/2014 16:42:52</publishTime>
+      <publishTime>12/08/2014 23:44:37</publishTime>
     </File>
     <File Include="bin/EventTermProject.XmlSerializers.dll">
-      <publishTime>11/14/2014 16:37:52</publishTime>
+      <publishTime>12/08/2014 23:44:37</publishTime>
+    </File>
+    <File Include="bin/EventTermProjectWS.dll">
+      <publishTime>12/08/2014 23:44:36</publishTime>
+    </File>
+    <File Include="Cars.aspx">
+      <publishTime>12/08/2014 23:41:19</publishTime>
+    </File>
+    <File Include="Cart.aspx">
+      <publishTime>12/08/2014 22:10:14</publishTime>
+    </File>
+    <File Include="Events.aspx">
+      <publishTime>12/08/2014 23:41:19</publishTime>
+    </File>
+    <File Include="Flights.aspx">
+      <publishTime>12/08/2014 23:41:19</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>12/08/2014 14:01:12</publishTime>
+    </File>
+    <File Include="Hotels.aspx">
+      <publishTime>12/08/2014 23:41:19</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>12/08/2014 13:55:59</publishTime>
+    </File>
+    <File Include="Login.Master">
+      <publishTime>12/08/2014 13:55:59</publishTime>
+    </File>
+    <File Include="Logout.aspx">
+      <publishTime>12/08/2014 14:31:29</publishTime>
+    </File>
+    <File Include="Master.Master">
+      <publishTime>12/08/2014 14:34:22</publishTime>
     </File>
     <File Include="Properties/Settings.settings">
       <publishTime>11/14/2014 16:36:02</publishTime>
     </File>
+    <File Include="Shop.aspx">
+      <publishTime>12/08/2014 14:56:00</publishTime>
+    </File>
+    <File Include="SignUp.aspx">
+      <publishTime>12/08/2014 13:55:59</publishTime>
+    </File>
     <File Include="TestPage.aspx">
-      <publishTime>11/14/2014 15:56:55</publishTime>
+      <publishTime>12/08/2014 13:55:59</publishTime>
+    </File>
+    <File Include="Web References/FlightService1/AirService.disco">
+      <publishTime>12/08/2014 14:01:12</publishTime>
+    </File>
+    <File Include="Web References/FlightService1/AirService.wsdl">
+      <publishTime>12/08/2014 14:01:12</publishTime>
+    </File>
+    <File Include="Web References/FlightService1/Reference.map">
+      <publishTime>12/08/2014 14:01:12</publishTime>
+    </File>
+    <File Include="Web References/HotelService/HotelService.disco">
+      <publishTime>12/08/2014 14:48:46</publishTime>
+    </File>
+    <File Include="Web References/HotelService/HotelService.wsdl">
+      <publishTime>12/08/2014 14:48:46</publishTime>
+    </File>
+    <File Include="Web References/HotelService/Reference.map">
+      <publishTime>12/08/2014 14:48:46</publishTime>
     </File>
     <File Include="Web References/publishRef/EventService.disco">
       <publishTime>11/14/2014 16:36:02</publishTime>
@@ -32,7 +93,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/14/2014 16:36:02</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>11/14/2014 16:37:52</publishTime>
+      <publishTime>12/08/2014 23:44:38</publishTime>
     </File>
   </ItemGroup>
 </Project>

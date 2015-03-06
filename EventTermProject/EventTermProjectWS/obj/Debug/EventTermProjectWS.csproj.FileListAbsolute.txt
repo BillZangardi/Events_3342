@@ -12,3 +12,12 @@ G:\cis3342\Events_3342\EventTermProject\EventTermProjectWS\bin\EventTermProjectW
 G:\cis3342\Events_3342\EventTermProject\EventTermProjectWS\obj\Debug\EventTermProjectWS.csprojResolveAssemblyReference.cache
 G:\cis3342\Events_3342\EventTermProject\EventTermProjectWS\obj\Debug\EventTermProjectWS.dll
 G:\cis3342\Events_3342\EventTermProject\EventTermProjectWS\obj\Debug\EventTermProjectWS.pdb
+C:\Users\Nicole\Documents\GitHub\Events3342\Events_3342\EventTermProject\EventTermProjectWS\bin\EventTermProjectWS.dll
+C:\Users\Nicole\Documents\GitHub\Events3342\Events_3342\EventTermProject\EventTermProjectWS\bin\EventTermProjectWS.pdb
+C:\Users\Nicole\Documents\GitHub\Events3342\Events_3342\EventTermProject\EventTermProjectWS\obj\Debug\EventTermProjectWS.dll
+C:\Users\Nicole\Documents\GitHub\Events3342\Events_3342\EventTermProject\EventTermProjectWS\obj\Debug\EventTermProjectWS.pdb
+C:\Users\tud03191\Desktop\Events_3342\EventTermProject\EventTermProjectWS\bin\EventTermProjectWS.dll
+C:\Users\tud03191\Desktop\Events_3342\EventTermProject\EventTermProjectWS\bin\EventTermProjectWS.pdb
+C:\Users\tud03191\Desktop\Events_3342\EventTermProject\EventTermProjectWS\obj\Debug\EventTermProjectWS.csprojResolveAssemblyReference.cache
+C:\Users\tud03191\Desktop\Events_3342\EventTermProject\EventTermProjectWS\obj\Debug\EventTermProjectWS.dll
+C:\Users\tud03191\Desktop\Events_3342\EventTermProject\EventTermProjectWS\obj\Debug\EventTermProjectWS.pdb

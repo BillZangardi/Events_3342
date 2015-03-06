@@ -4,3 +4,12 @@ C:\Users\Nicole\Documents\GitHub\Events_3342\EventTermProject\EventTermProject\b
 C:\Users\Nicole\Documents\GitHub\Events_3342\EventTermProject\EventTermProject\obj\Release\EventTermProject.dll
 C:\Users\Nicole\Documents\GitHub\Events_3342\EventTermProject\EventTermProject\obj\Release\EventTermProject.pdb
 C:\Users\Nicole\Documents\GitHub\Events_3342\EventTermProject\EventTermProject\obj\Release\EventTermProject.XmlSerializers.dll
+C:\Users\tud03191\Desktop\Events_3342\EventTermProject\EventTermProject\bin\EventTermProject.dll
+C:\Users\tud03191\Desktop\Events_3342\EventTermProject\EventTermProject\bin\EventTermProject.XmlSerializers.dll
+C:\Users\tud03191\Desktop\Events_3342\EventTermProject\EventTermProject\bin\EventTermProject.pdb
+C:\Users\tud03191\Desktop\Events_3342\EventTermProject\EventTermProject\bin\EventTermProjectWS.dll
+C:\Users\tud03191\Desktop\Events_3342\EventTermProject\EventTermProject\bin\EventTermProjectWS.pdb
+C:\Users\tud03191\Desktop\Events_3342\EventTermProject\EventTermProject\obj\Release\EventTermProject.csprojResolveAssemblyReference.cache
+C:\Users\tud03191\Desktop\Events_3342\EventTermProject\EventTermProject\obj\Release\EventTermProject.dll
+C:\Users\tud03191\Desktop\Events_3342\EventTermProject\EventTermProject\obj\Release\EventTermProject.pdb
+C:\Users\tud03191\Desktop\Events_3342\EventTermProject\EventTermProject\obj\Release\EventTermProject.XmlSerializers.dll

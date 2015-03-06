@@ -76,22 +76,13 @@ namespace EventTermProject {
         protected global::System.Web.UI.WebControls.DropDownList ddlAgency;
         
         /// <summary>
-        /// btnGo2 control.
+        /// btnSearchByAgency control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnGo2;
-        
-        /// <summary>
-        /// step3 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl step3;
+        protected global::System.Web.UI.WebControls.Button btnSearchByAgency;
         
         /// <summary>
         /// ddlType control.
@@ -175,13 +166,13 @@ namespace EventTermProject {
         protected global::System.Web.UI.WebControls.TextBox txtPrice;
         
         /// <summary>
-        /// btnSearch control.
+        /// btnSearchByReqs control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSearch;
+        protected global::System.Web.UI.WebControls.Button btnSearchByReqs;
         
         /// <summary>
         /// gvCars control.
@@ -191,5 +182,23 @@ namespace EventTermProject {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView gvCars;
+        
+        /// <summary>
+        /// btnAdd control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnAdd;
+        
+        /// <summary>
+        /// lblInputValidation control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblInputValidation;
     }
 }

@@ -16,11 +16,14 @@ namespace EventTermProject
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["LoggedIn"] == null)
+            {
+                Response.Redirect("Login.aspx");
+            }
             if (!IsPostBack)
             {
                 step2.Visible = false;
-                step3.Visible = false;
+                btnAdd.Visible = false;
             }
 
         }
@@ -36,12 +39,13 @@ namespace EventTermProject
             ddlAgency.DataTextField = "name";
             ddlAgency.DataValueField = "name";
             ddlAgency.DataBind();
+
             step2.Visible = true;
-            step1.Visible = false;
+            //step1.Visible = false;
 
         }
 
-        protected void btnGo2_Click(object sender, EventArgs e)
+        protected void btnSearchByAgency_Click(object sender, EventArgs e)
         {
             string city = ddlCity.SelectedValue;
             string state = ddlState.SelectedValue;
@@ -58,69 +62,20 @@ namespace EventTermProject
             agency.state = (string)agencies.Tables[0].Rows[ddlAgency.SelectedIndex]["state"];
 
             DataSet cars = Car.GetCars(agency, city, state);
-            ddlCarClass.Items.Clear();
-            ddlType.Items.Clear();
-            //populate dropdown with only a single entry for each car class
-            for (int i = 0; i < cars.Tables[0].Rows.Count; i++)
-            {
-                if (i == 0)
-                {
-                    ddlCarClass.Items.Add(new ListItem((string)cars.Tables[0].Rows[i]["class"], (string)cars.Tables[0].Rows[i]["class"]));
-                }
-                else
-                {
-                    bool exists = false;
-                    for (int j = 0; j < ddlCarClass.Items.Count; j++)
-                    {
-                        string currCarClass = ddlCarClass.Items[j].Text;
-                        string currClass = (string)cars.Tables[0].Rows[i]["class"];
-                        if (currCarClass == currClass)
-                        {
-                            exists = true;
-                        }
-                    }
+            //ddlCarClass.Items.Clear();
+            //ddlType.Items.Clear();
 
-                    if (!exists)
-                    {
-                        ddlCarClass.Items.Add(new ListItem((string)cars.Tables[0].Rows[i]["class"], (string)cars.Tables[0].Rows[i]["class"]));
-                    }
-                }
-            }
 
-            //populate dropdown with only a single entry for each car type
-            for (int i = 0; i < cars.Tables[0].Rows.Count; i++)
-            {
-                if (i == 0)
-                {
-                    ddlType.Items.Add(new ListItem((string)cars.Tables[0].Rows[i]["type"], (string)cars.Tables[0].Rows[i]["type"]));
-                }
-                else
-                {
-                    bool exists = false;
-                    for (int j = 0; j < ddlType.Items.Count; j++)
-                    {
-                        string currCarClass = ddlType.Items[j].Text;
-                        string currClass = (string)cars.Tables[0].Rows[i]["type"];
-                        if (currCarClass == currClass)
-                        {
-                            exists = true;
-                        }
-                    }
+            gvCars.DataSource = cars;
+            gvCars.DataBind();
 
-                    if (!exists)
-                    {
-                        ddlType.Items.Add(new ListItem((string)cars.Tables[0].Rows[i]["type"], (string)cars.Tables[0].Rows[i]["type"]));
-                    }
-                }
-            }
+            btnAdd.Visible = true;
 
-            step2.Visible = false;
-            step3.Visible = true;
 
-          
+
         }
 
-        protected void btnSearch_Click(object sender, EventArgs e)
+        protected void btnSearchByReqs_Click(object sender, EventArgs e)
         {
             string city = ddlCity.SelectedValue;
             string state = ddlState.SelectedValue;
@@ -137,7 +92,7 @@ namespace EventTermProject
                 electric = "yes";
             }
 
-            requirements.price = float.Parse(txtPrice.Text);
+
             requirements.gps = gps;
             requirements.type = ddlType.SelectedValue;
             requirements.carClass = ddlCarClass.SelectedValue;
@@ -145,11 +100,99 @@ namespace EventTermProject
             requirements.passengers = int.Parse(ddlPassengers.SelectedValue);
             requirements.luggage = int.Parse(ddlLuggage.SelectedValue);
             requirements.doors = int.Parse(ddlDoors.SelectedValue);
-            requirements.mileage = int.Parse(txtMileage.Text);
+            if (txtMileage.Text == "")
+            {
+                requirements.mileage = 999999999;
+            }
+            else
+            {
+                requirements.mileage = int.Parse(txtMileage.Text);
+            }
+            if (txtPrice.Text == "")
+            {
+                requirements.price = 999999999999999999;
+            }
+            else
+            {
+                requirements.price = float.Parse(txtPrice.Text);
+            }
 
             DataSet findCars = Car.FindCars(requirements, city, state);
             gvCars.DataSource = findCars;
             gvCars.DataBind();
+
+
+            btnAdd.Visible = true;
+
+        }
+
+        protected void btnAdd_Click(object sender, EventArgs e)
+        {
+            VacationPackage vacation;
+            //retrieve session vacationpackage object
+            if (Session["VacationPackage"] != null)
+            {
+                vacation = (VacationPackage)Session["VacationPackage"];
+            }
+            else
+            {
+                vacation = new VacationPackage();
+            }
+
+            //add the selected cars to the car array
+            int countChecked = 0;
+    
+
+            for (int i = 0; i < gvCars.Rows.Count; i++)
+            {
+                CheckBox tempCheck = (CheckBox)gvCars.Rows[i].FindControl("chkSelect");
+
+                if (tempCheck.Checked)
+                {
+                    countChecked++;
+
+                    try
+                    {
+                        //if validated create an arraylist of cars and add them to the vacation package.
+                        CarService.Car car = new CarService.Car();
+                        car.carID = int.Parse(gvCars.Rows[i].Cells[1].Text);
+                        car.make = (gvCars.Rows[i].Cells[2].Text);
+                        car.model = (gvCars.Rows[i].Cells[3].Text);
+                        car.year = (gvCars.Rows[i].Cells[4].Text);
+                        car.price = int.Parse(gvCars.Rows[i].Cells[7].Text);
+                        car.gps = (gvCars.Rows[i].Cells[8].Text);
+                        car.type = (gvCars.Rows[i].Cells[9].Text);
+                        car.carClass = gvCars.Rows[i].Cells[10].Text;
+                        car.electric = gvCars.Rows[i].Cells[11].Text;
+                        car.passengers = int.Parse(gvCars.Rows[i].Cells[12].Text);
+                        car.luggage = int.Parse(gvCars.Rows[i].Cells[13].Text);
+                        car.doors = int.Parse(gvCars.Rows[i].Cells[14].Text);
+                        car.mileage = int.Parse(gvCars.Rows[i].Cells[15].Text);
+
+                        //add a car to the arraylist
+                        vacation.cars.Add(car);
+                        lblInputValidation.Text = countChecked.ToString() + " Cars were added to your Vacation Package, totaling " + vacation.cars.Count.ToString() + " cars";
+
+                    }
+                    catch (Exception ex)
+                    {
+                        lblInputValidation.Text = "Error: Could not add car to your cart";
+
+                        return;
+                    }
+
+                }
+
+            }
+
+            if (countChecked == 0)
+            {
+                lblInputValidation.Text = "Error: Please select at least one car to add to your Vacation Package";
+            }
+
+            //set the object into session
+            Session["VacationPackage"] = vacation;
+
         }
     }
 }

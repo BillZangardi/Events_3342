@@ -5,6 +5,7 @@ using System.Web;
 
 namespace EventTermProjectWS
 {
+    [Serializable]
     public class Event
     {
         //class properties for object "Event"

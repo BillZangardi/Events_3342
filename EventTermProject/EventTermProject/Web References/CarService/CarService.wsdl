@@ -106,7 +106,7 @@
           <s:element minOccurs="1" maxOccurs="1" name="customerID" type="s:int" />
           <s:element minOccurs="0" maxOccurs="1" name="firstName" type="s:string" />
           <s:element minOccurs="0" maxOccurs="1" name="lastName" type="s:string" />
-          <s:element minOccurs="0" maxOccurs="1" name="age" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="age" type="s:int" />
           <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
           <s:element minOccurs="0" maxOccurs="1" name="address" type="s:string" />
           <s:element minOccurs="0" maxOccurs="1" name="phoneNumber" type="s:string" />
@@ -121,6 +121,7 @@
           <s:element minOccurs="1" maxOccurs="1" name="price" type="s:float" />
           <s:element minOccurs="0" maxOccurs="1" name="gps" type="s:string" />
           <s:element minOccurs="0" maxOccurs="1" name="carClass" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="type" type="s:string" />
           <s:element minOccurs="0" maxOccurs="1" name="electric" type="s:string" />
           <s:element minOccurs="1" maxOccurs="1" name="passengers" type="s:int" />
           <s:element minOccurs="1" maxOccurs="1" name="luggage" type="s:int" />

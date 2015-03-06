@@ -338,6 +338,8 @@ namespace EventTermProject.CarService {
         
         private string carClassField;
         
+        private string typeField;
+        
         private string electricField;
         
         private int passengersField;
@@ -419,6 +421,16 @@ namespace EventTermProject.CarService {
         }
         
         /// <remarks/>
+        public string type {
+            get {
+                return this.typeField;
+            }
+            set {
+                this.typeField = value;
+            }
+        }
+        
+        /// <remarks/>
         public string electric {
             get {
                 return this.electricField;
@@ -483,7 +495,7 @@ namespace EventTermProject.CarService {
         
         private string lastNameField;
         
-        private string ageField;
+        private int ageField;
         
         private string emailField;
         
@@ -522,7 +534,7 @@ namespace EventTermProject.CarService {
         }
         
         /// <remarks/>
-        public string age {
+        public int age {
             get {
                 return this.ageField;
             }

@@ -36,12 +36,18 @@ namespace EventTermProject
 
         protected void btnEvents_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("Events.aspx");
         }
 
         protected void btnHotels_Click(object sender, EventArgs e)
         {
+            Response.Redirect("Hotels.aspx");
+        }
 
+        protected void btnLogout_Click(object sender, EventArgs e)
+        {
+            Session.Abandon();
+            Response.Redirect("Login.aspx");
         }
     }
 }

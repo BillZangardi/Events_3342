@@ -48,6 +48,17 @@ namespace EventTermProject.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://cis-iis2.temple.edu/Fall2014/CIS3342_tuf01657/TermProjectWS/AirService.asm" +
+            "x")]
+        public string EventTermProject_FlightService1_AirService {
+            get {
+                return ((string)(this["EventTermProject_FlightService1_AirService"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
         [global::System.Configuration.DefaultSettingValueAttribute("http://cis-iis2.temple.edu/Fall2014/CIS3342_tue55387/TermProjectWS/HotelService.a" +
             "smx")]
         public string EventTermProject_HotelService_HotelService {
